@@ -1,0 +1,59 @@
+# Values stated in the paper text / figures (Abraham et al. 2026). Used ONLY to build an
+# agreement table. Never tune anything to match these numbers.
+performance_test_set:
+  n_test: 33
+  confusion_all_four_models: {true_0: 12, true_1: 21}
+  accuracy: {DT: 0.9394, RF: 0.8788, LGBM: 0.8485, CB: 0.8485}
+  roc_auc_fig5: {DT: 0.95, RF: 0.91, LGBM: 0.88, CB: 0.92}
+  note: "1 test sample = 3.03 percentage points; model ranking differs by <= 3 samples"
+
+top5_features_fig7:
+  DT:   [Li_comp, Sintering Time, Zr_site_sto, 1st Calcination Temp, Zr_site_elnv]
+  RF:   [Li_comp, Sintering Temperature, Zr_site_sto, Li_site_sto, Sintering Time]
+  LGBM: [Li_comp, Ball milling time, Sintering Temperature, Zr_comp, Sintering Time]
+  CB:   [Li_comp, Sintering Temperature, Zr_comp, Zr_site_elnv, Li_site_sto]
+
+windows_text:
+  Li_comp: {range: [6.1, 6.4], peak: 6.4, models: all, panels: "Fig7 a,f,k,p"}
+  Sintering Time: {DT: [18, 20], RF_peak: 20, panels: "Fig7 b,j"}
+  Sintering Temperature: {peak: 1200, panels: "Fig7 g,m,q"}
+  1st Calcination Temp: {range: [850, 900], shape: bell, panels: "Fig7 d (DT)"}
+  Zr_site_sto: {range: [0.18, 0.8], RF_peak: 0.25, panels: "Fig7 c,h"}
+  Zr_comp: {LGBM: 1.9, CB: 1.5, panels: "Fig7 n,r"}
+  Zr_site_elnv: {rule: "> 1.22", panels: "Fig7 e,s", note: "1.22 equals Pauling EN of Y"}
+  Li_site_sto: {range: [0.2, 0.3], peak: 0.24, panels: "Fig7 i,t"}
+
+two_way_fig9:
+  panels:
+    a: {model: DT, y: Sintering Time}
+    b: {model: DT, y: 1st Calcination Temp}
+    c: {model: DT, y: Zr_site_sto}
+    d: {model: DT, y: Zr_site_elnv}
+    e: {model: RF, y: Sintering Time}
+    f: {model: RF, y: Sintering Temperature}
+    g: {model: RF, y: Zr_site_sto}
+    h: {model: RF, y: Li_site_sto}
+    i: {model: LGBM, y: Sintering Time}
+    j: {model: LGBM, y: Sintering Temperature}
+    k: {model: LGBM, y: Zr_comp}
+    l: {model: LGBM, y: Ball milling time}
+    m: {model: CB, y: Zr_site_elnv}
+    n: {model: CB, y: Sintering Temperature}
+    o: {model: CB, y: Zr_comp}
+    p: {model: CB, y: Li_site_sto}
+  x_axis: Li_comp
+  claims:
+    - "high probability consistently near Li_comp ~ 6.4"
+    - "DT: optimal Li range widens for Zr-site dopant amount 0.3-0.8 (Fig 9c)"
+    - "DT: optimal Li_comp 7.2 when Zr_site_elnv > 1 (Fig 9c,d)"
+
+ga_subset_fig12:
+  n_records_paper: 88
+  accuracy: {CB: 0.92, AB: 0.92}
+  panels:
+    CB: [Li_comp, 1st Calcination Temp, "%excess Li", Sintering Time, Li_site_sto]
+    AB: [Li_comp, Li_site_elnv, Ball milling time, Li_site_sto, 1st Calcination Temp]
+  shapes:
+    CB_Li_comp: "high (~0.8) for 6.0-6.5, drops to ~0.2 by 7.0"
+    CB_Li_site_sto: "increasing from ~0.56 to ~0.62 over 0-0.45"
+  text: {calcination_T: 1000, sintering_time_peak_h: 12}

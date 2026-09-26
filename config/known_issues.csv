@@ -1,0 +1,14 @@
+issue_id,record_ids,source_id,issue_type,field,recorded_value,suspected_value,evidence,action_V_raw,action_V_corr
+K01,178,45,entry_error,La_comp;Zr_comp,0;0.4,3;1.6,formula string Li6.6La3Zr1.6O12Ta0.4 and Zr=2-t,keep,correct
+K02,179;180;181,45,entry_error,Zr_comp,0.4,1.6,formula string Zr1.6 and Zr=2-t,keep,correct
+K03,102;107;112;117,32,formula_internal_conflict,Zr_comp,1.6,1.8?,Ta0.2 implies Zr=1.8; formula string itself says Zr1.6; check original paper,keep,flag_only
+K04,101,32,string_vs_column,Composition,Li6.47,Li6.4,Li column 6.4 is charge-consistent; string only,keep,keep
+K05,143,37,entry_error,La_comp,2.8,2.875,formula string La2.875,keep,correct
+K06,21;42;43;44;45,9;19,compensation_differs,Li Composition,see rows,n/a,Al-doped with Li not equal 7-3a (Li-content series or excess-Li counted in nominal Li); not an error by default,keep,flag_only
+K07,11,4,site_encoding_missing,Li_dop;Li_site_sto,0;0,Al;0.25,dopant columns list Al0.25 but site columns empty,keep,correct
+K08,29,11,string_vs_column,Li_site_sto,0.42,0.40,dopant column x=0.40 and Li=7-3*0.40,keep,correct
+K09,37,16,string_vs_column,Li_site_sto,0.25,0.20?,dopant column x=0.20 is charge-consistent; string and site column say 0.25,keep,flag_only
+K10,71,26,string_vs_column,Zr_site_sto,0.05,0.075?,dopant column gives Zr-site total 0.075 (charge-consistent); string and site column say 0.05,keep,flag_only
+K11,65;66;67;68,25,site_sum_mismatch,Zr_comp+Zr_site_sto,!=2,n/a,charge-balanced but site sum != 2 (Mg/Sc site assignment unclear),keep,flag_only
+K12,8;38;170;188;189;190;191;192;193,2;17;42;48,missing_composition,Composition,NaN,n/a,no formula; site columns empty; MICE would impute composition independently,keep(paper: MICE),exclude_from_chemistry_checks
+K13,see tests/test_data_facts.py::test_feature_identical_groups,48;54,duplicate_inputs_conflicting_labels,all inputs,,n/a,21 records in 8 feature-identical groups; sigma spans up to ~3.4 decades; source 54 repeats differ only in Relative Density (not a feature),keep,keep (sensitivity: merge by median)

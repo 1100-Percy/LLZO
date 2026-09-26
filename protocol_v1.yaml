@@ -1,0 +1,152 @@
+# Part 1 protocol — FROZEN once M1 is committed.
+# Agents may READ this file but must never edit it after the M1 commit.
+# A needed change is written to DECISIONS.md as a proposal "P-xxx" and the run
+# continues with v1 values. Only the human creates protocol_v2.yaml.
+version: 1
+status: draft_until_M1_commit      # M1 sets this to "frozen" with the commit hash in DECISIONS.md
+
+paper:
+  ref: "Abraham et al., Energy Storage 2026, 8:e70418, doi:10.1002/est2.70418"
+  pdf: data/raw/paper_Abraham2026_est2.70418.pdf
+  notes: >
+    Repo github.com/soboyejoresearch/Battery-Research contains only the xlsx (byte-identical
+    to data/raw). No code. Every implementation detail not stated in the paper is
+    "study choice" and must be labelled as such in reports.
+
+data:
+  raw: data/raw/Machine_Learning_Guided_Design_dataset.xlsx
+  record_key: record_id          # Excel row number
+  group_key: source_id           # forward-filled paper number
+  versions:
+    V_raw:  "raw values, paper-faithful (MAIN for replication)"
+    V_corr: "apply config/known_issues.csv action_V_corr == correct"
+  duplicates_sensitivity: "merge feature-identical groups (K13) by median log10 sigma"
+
+target:
+  column: "Ionic Conductivity(Total)"
+  rule: "label = 1 if sigma >= threshold else 0"
+  threshold_main: 2.69e-4               # paper: median of the dataset
+  threshold_variants:
+    T_median_kept: "median sigma of rows kept after row filtering"
+    T_1e4: 1.0e-4                        # benchmark mentioned in paper
+    T_ratio: "value such that high fraction == 21/33 on kept rows (matches paper confusion matrices)"
+
+features:
+  # Paper Table 1 + features visible in paper Figs 6/11 + Table 2 synthesis categories.
+  composition: [Li_comp, La_comp, Zr_comp, Li_site_sto, La_site_sto, Zr_site_sto]
+  descriptors:   # built from config/dopant_properties.csv; stoichiometry-weighted mean over dopants on that site; undoped site = 0
+    - Li_site_elnv
+    - Zr_site_elnv
+    - Zr_site_irad
+    - Zr_site_A
+    - La_site_A
+  counts: ["# of Dopants"]
+  synthesis_numeric:
+    - "%excess Li"
+    - "1st Calcination Temp"
+    - "1st Calcination Time"
+    - "# of calcinations"
+    - "Ball milling time"
+    - "# of ball milling"
+    - "Sintering Temperature"
+    - "Sintering Time"
+    - "Temperature(Ionic conductivity)"   # paper calls it Measurement Temperature
+  one_hot: ["Li Precursor", "La Precursor", "Li_dop", "La_dop", "Zr_dop"]   # gives Li_dop_Al etc.
+  excluded_outcomes: [Relative Density, Crystal Structure, Lattice Parameter, Bulk ionic conductivity,
+                      GB ionic conductivity, Activation Energy eV, Electronic conductivity,
+                      "Battery Capacity(mAh/g)", Number of cycles, "%retention", Cathode, Anode]
+  excluded_study_choice:
+    "Cold  Pressure": "paper: pressure effect could not be determined on the broad dataset (separate subset)"
+    "Ball milling speed": "~50% missing; not visible in paper importance plots"
+  rename: {"Li Composition": Li_comp, "Temperature(Ionic conductivity)": Measurement Temperature}
+  site_descriptor_source: "site columns Li_dop/La_dop/Zr_dop + dopant_k/x_k pairs (chemistry.dopant_long)"
+
+preprocessing:
+  row_filter: "drop rows with > 3 missing values among the raw feature columns (before one-hot)"
+  outlier_removal: none            # paper does not state the method -> study choice, logged
+  imputation:
+    A0: "IterativeImputer (MICE-like), fit on ALL kept rows, numeric features only, random_state=seed"   # paper-faithful
+    A1: "same imputer fit on training rows only (leak-free variant)"
+  categorical_missing: "own category 'missing' before one-hot"
+  scaling: none                    # tree models are invariant; declared
+
+split_and_tuning:
+  split: "stratified 70/15/15 (train/val/test)"
+  seeds: [0, 1, 2, 3, 4]
+  main_seed: 0
+  tuning: "GridSearchCV, StratifiedKFold(5, shuffle, seed), scoring=f1_weighted, on train only"
+  grids:   # study choice (paper Table S1 not available)
+    DT:   {max_depth: [3, 5, 8, null], min_samples_leaf: [1, 3, 5]}
+    RF:   {n_estimators: [300], max_depth: [5, 10, null], min_samples_leaf: [1, 3], max_features: [sqrt, 0.5]}
+    LGBM: {n_estimators: [200, 500], learning_rate: [0.03, 0.1], num_leaves: [7, 15], min_child_samples: [5, 10]}
+    CB:   {iterations: [300, 600], depth: [4, 6], learning_rate: [0.03, 0.1]}
+    AB:   {n_estimators: [100, 300], learning_rate: [0.1, 0.5, 1.0]}
+  group_cv: "GroupKFold(5) and LeaveOneGroupOut by source_id, same pipeline, report only (no model selection)"
+
+models:
+  full_data: [DT, RF, LGBM, CB]
+  ga_subset: [CB, AB]             # paper Fig 12
+  ga_subset_definition: "records containing Ga in any dopant slot (86 here; paper reports 88)"
+
+pdp:
+  engine: "custom brute-force ICE; must equal sklearn.inspection.partial_dependence(method='brute') to 1e-10"
+  response: "predict_proba[:, 1]"
+  grids:
+    G1: "sklearn default logic: percentiles (0.05, 0.95), grid_resolution=100; if n_unique < 100 use unique values"   # MAIN
+    G2: "full observed range [min, max], 60 equidistant points"
+  backgrounds:
+    B_train: "training rows of the fitted model (paper-faithful)"
+    B_all: "all kept rows"
+    B_Ga_single: "dopant_1 == Ga and # of Dopants == 1"
+    B_Ga_all: "Ga-containing rows"
+    B_Ta_single: "dopant_1 == Ta and # of Dopants == 1"
+    B_single: "# of Dopants == 1 with a uniquely assigned site"
+  weighting: {main: record, variant: "source (w = 1 / n_records_in_source)"}
+
+window_rule:     # frozen BEFORE any curve is looked at
+  amplitude_flat: 0.05          # A = max - min of PD; A < 0.05 -> "flat, no window"
+  level: 0.8                    # window = grid points with PD >= min + 0.8 * A
+  segments: "contiguous runs along the grid; >1 run -> 'split'"
+  report: [lower, upper, peak_x, amplitude, n_segments]
+  min_points_per_gridpoint: 5   # schemes with filtering: fewer rows OR fewer than 2 sources -> blank
+  min_sources_per_gridpoint: 2
+
+chemistry:
+  tolerance: 0.05
+  residuals: [charge (feature-level, qbar from background), site_Zr, site_La]
+  labels:
+    consistent: "|r| < tol for all residuals"
+    background_flagged: "background record is in known_issues K03, K06, K09, K10, K11 or K12"
+    violation: "otherwise"
+  descriptor_query_checks:
+    nearest_element_tolerance: {elnv: 0.02, irad: 0.02, A: 1.0}
+    dopantless_query: "site_sto == 0 on the background while the descriptor grid value != 0"
+
+support:
+  subspace: [Li_comp, Zr_comp, Li_site_sto, La_site_sto, Zr_site_sto, "Sintering Temperature",
+             "Sintering Time", "%excess Li", "1st Calcination Temp"]
+  scaling: "robust (median / IQR) fitted on training rows"
+  k: 3
+  threshold: "95th percentile of leave-one-out 1-NN distance among training rows"
+  radius: "same value as threshold"
+  labels:
+    supported: "d_k <= threshold AND neighbours within radius come from >= 2 sources"
+    single_source: "d_k <= threshold AND neighbours from exactly 1 source"
+    unsupported: "d_k > threshold"
+
+ablation:
+  A: "background B_train (or B_all), univariate PDP"
+  B: "restricted background (B_Ga_single / B_Ta_single / B_single), univariate PDP"
+  C: "as B, keep only (background, grid) points that are consistent AND supported; per-gridpoint n and n_sources reported"
+  D: "as B, linked path via chemistry.linked_update on the background's own dopant site; derived features recomputed"
+  Dprime: "D + support filter as in C"
+  rule: "same trained model and same background across B/C/D/D'; only one factor changes per step"
+
+bootstrap:
+  B: 50
+  unit: source_id
+  hyperparameters: "fixed to main-seed GridSearch result (no re-tuning)"
+
+compute_budget:
+  max_wall_hours_per_milestone: 6
+  on_exceed: "reduce grid resolution to 50 for 2-D PDPs only, log in DECISIONS.md"
