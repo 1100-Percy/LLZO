@@ -13,6 +13,8 @@
 - D-008 | M1 | 本研究选择：IterativeImputer 使用 BayesianRidge 默认估计器、max_iter=10、tol=1e-3、mean 初始化、ascending、sample_posterior=false、skip_complete=false；不缩放、不裁剪、不去离群点。记录收敛警告。A0 在全部保留行拟合，A1 在明确训练 ID 上拟合；目标和来源 ID 不进入插补器。M1 为 A1 诊断按主阈值和协议种子先切 test=0.15，再在余下行按 0.15/0.85 切 validation；M2 其他阈值或 CV 必须重新划分并在各自训练 fold 内拟合 A1，不能复用这里的 A1 矩阵。
 - D-009 | M1 | T_ratio 在有限样本或标签并列时可能无法精确达到 21/33。遵守协议的比较目的，枚举观测阈值取高导比例误差绝对值最小者，平手取较高阈值（更少高导标签），报告实际比例、误差及是否精确；不改变 T_main，也不读取 paper_targets 的结果调参。
 - D-010 | M1 | Git 提交不能在自身受跟踪文件中包含其最终 hash。冻结提交先包含协议 status=frozen 和全部验收产物，随后仅追加一次文档提交记录该冻结提交的完整 hash；不 amend 冻结提交、不再改协议，不开始 M2。
+- D-011 | 人类反馈 | HUMAN_FEEDBACK.md 明确授权安装 lightgbm、catboost 并推送 GitHub，覆盖 D-002 中针对缺包的联网安装限制。使用 `.venv/bin/python -m pip --isolated --disable-pip-version-check install --only-binary=:all: --index-url https://pypi.org/simple 'lightgbm>=4.0' 'catboost>=1.2'`，并安装必要的 Homebrew libomp 运行库；未修改冻结协议。包版本、合成数据检查与完整测试见 outputs/feedback_dependencies/ 和 reports/checkpoints/feedback_dependencies.md。此授权不扩展为无关依赖安装或 M2 执行。
+- D-012 | 人类反馈 | 默认 GitHub CLI 账号 aidhtech 对目标仓库无写权限；确认已保存的 1100-Percy 账号具有写权限后，仅在推送子进程使用该认证，不改全局账号、不保存或输出凭据。推送采用 HEAD:main 快进，不使用 force；完成后比对远端提交与本地 HEAD。
 
 ### 协议冻结记录
 

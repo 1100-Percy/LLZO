@@ -20,11 +20,16 @@
 
 ## 下一个会话从哪里开始
 - 先读 HUMAN_FEEDBACK.md，再从 PLAN.md 的 M2 开始。当前会话没有训练任何 M2 模型。
-- 注意当前运行时缺少 lightgbm、catboost；不联网、不安装、不替换指定模型，按 D-002 处理可用离线运行时或依赖阻塞。
+- 模型依赖已按人类反馈授权补齐，包含 LightGBM 所需 libomp；当前验证结果见 outputs/feedback_dependencies/。D-002 为历史限制，新的授权与处理见 D-011。
 - M1 的 A1 矩阵只适用于已保存的主阈值划分；M2 更换阈值、验证折或分组时须在相应训练行重新拟合插补器，防止泄漏。
 - 没有后台任务。
 
-## 本次会话摘要
+## 启动会话摘要（M0/M1）
 - 完成 M0 与 M1 的实现、离线运行、验收、checkpoint、claims 登记及协议冻结。
 - 所有关键数字由 outputs 中产物生成；优先查看 reports/checkpoints/M1.md、audit_log.csv 和 DECISIONS.md。
 - 保留原始文件与已核实模块；没有联网、安装新包或执行 M2。
+
+## 本次会话摘要（人类反馈）
+- 安装 lightgbm、catboost 及必要运行依赖，合成数据训练与完整测试通过；新增 scripts/check_model_dependencies.py 可重跑验收。
+- 更新反馈处理记录、决策、环境产物、checkpoint 与 claims；保留 M0/M1 的历史检查记录，不改原始数据或冻结协议。
+- 正在提交并推送至 GitHub main，待远端核验后回填完成状态；本会话不开始 M2。
