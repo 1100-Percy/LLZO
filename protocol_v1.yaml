@@ -3,7 +3,7 @@
 # A needed change is written to DECISIONS.md as a proposal "P-xxx" and the run
 # continues with v1 values. Only the human creates protocol_v2.yaml.
 version: 1
-status: draft_until_M1_commit      # M1 sets this to "frozen" with the commit hash in DECISIONS.md
+status: frozen      # M1 sets this to "frozen" with the commit hash in DECISIONS.md
 
 paper:
   ref: "Abraham et al., Energy Storage 2026, 8:e70418, doi:10.1002/est2.70418"

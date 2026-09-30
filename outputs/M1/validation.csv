@@ -1,0 +1,12 @@
+key,value
+correct_issues,5.0
+expected_audit_cells,9.0
+actual_audit_cells,9.0
+imputation_runs,20.0
+convergence_warnings,0.0
+k12_records,9.0
+diagnostic_rows,180.0
+k12_used_in_model,0.0
+k12_max_abs_charge,2.1742677031954507
+protocol_status_frozen,1.0
+protected_files_match,1.0

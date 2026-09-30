@@ -1,11 +1,11 @@
 {
-  "seed": null,
-  "data_version": "V_raw+V_corr",
+  "seed": 2,
+  "data_version": "V_corr",
   "script": "scripts/run_m1.py",
   "git_hash": "ebca7d33f9c8bb1aa5f370fb040d0d712464c610",
   "git_dirty": true,
   "protocol_version": 1,
   "protocol_sha256": "ac99cfc50a87bf818b33923af5510198f09ff437a8c8e1ad5cede337b9fc158f",
-  "timestamp": "2026-09-30T03:03:54.793742+00:00",
-  "sha256": "21113399d724f1b718931389ec9abc24c5fff3b602c9694e09a0a900e1ef9049"
+  "timestamp": "2026-09-30T03:03:44.889451+00:00",
+  "sha256": "51b902d7580a3b58d32c5a852dfbf97c0ec3b55281d1a6886f992ead4f029ace"
 }

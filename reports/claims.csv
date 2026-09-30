@@ -1,5 +1,60 @@
 claim_id,statement,artifact_path,key,value
-M0-tests,环境验收 tests,outputs/M0/validation.csv,key=tests|value,16
-M0-failures,环境验收 failures,outputs/M0/validation.csv,key=failures|value,0
-M0-errors,环境验收 errors,outputs/M0/validation.csv,key=errors|value,0
-M0-skipped,环境验收 skipped,outputs/M0/validation.csv,key=skipped|value,0
+M0-tests,环境验收 tests,outputs/M0/validation.csv,key=tests|value,16.0
+M0-failures,环境验收 failures,outputs/M0/validation.csv,key=failures|value,0.0
+M0-errors,环境验收 errors,outputs/M0/validation.csv,key=errors|value,0.0
+M0-skipped,环境验收 skipped,outputs/M0/validation.csv,key=skipped|value,0.0
+M1-V_raw-n_raw,V_raw n_raw,outputs/M1/dataset_summary.csv,data_version=V_raw|threshold_name=T_main|n_raw,227.0
+M1-V_raw-n_kept,V_raw n_kept,outputs/M1/dataset_summary.csv,data_version=V_raw|threshold_name=T_main|n_kept,218.0
+M1-V_raw-n_dropped,V_raw n_dropped,outputs/M1/dataset_summary.csv,data_version=V_raw|threshold_name=T_main|n_dropped,9.0
+M1-V_raw-n_sources_kept,V_raw n_sources_kept,outputs/M1/dataset_summary.csv,data_version=V_raw|threshold_name=T_main|n_sources_kept,49.0
+M1-V_corr-n_raw,V_corr n_raw,outputs/M1/dataset_summary.csv,data_version=V_corr|threshold_name=T_main|n_raw,227.0
+M1-V_corr-n_kept,V_corr n_kept,outputs/M1/dataset_summary.csv,data_version=V_corr|threshold_name=T_main|n_kept,218.0
+M1-V_corr-n_dropped,V_corr n_dropped,outputs/M1/dataset_summary.csv,data_version=V_corr|threshold_name=T_main|n_dropped,9.0
+M1-V_corr-n_sources_kept,V_corr n_sources_kept,outputs/M1/dataset_summary.csv,data_version=V_corr|threshold_name=T_main|n_sources_kept,49.0
+M1-V_raw-T_main-threshold,V_raw T_main threshold,outputs/M1/dataset_summary.csv,data_version=V_raw|threshold_name=T_main|threshold,0.000269
+M1-V_raw-T_main-n_high,V_raw T_main n_high,outputs/M1/dataset_summary.csv,data_version=V_raw|threshold_name=T_main|n_high,109.0
+M1-V_raw-T_main-high_fraction,V_raw T_main high_fraction,outputs/M1/dataset_summary.csv,data_version=V_raw|threshold_name=T_main|high_fraction,0.5
+M1-V_raw-T_main-ratio_error,V_raw T_main ratio_error,outputs/M1/dataset_summary.csv,data_version=V_raw|threshold_name=T_main|ratio_error,-0.1363636363636363
+M1-V_raw-T_median_kept-threshold,V_raw T_median_kept threshold,outputs/M1/dataset_summary.csv,data_version=V_raw|threshold_name=T_median_kept|threshold,0.000269
+M1-V_raw-T_median_kept-n_high,V_raw T_median_kept n_high,outputs/M1/dataset_summary.csv,data_version=V_raw|threshold_name=T_median_kept|n_high,109.0
+M1-V_raw-T_median_kept-high_fraction,V_raw T_median_kept high_fraction,outputs/M1/dataset_summary.csv,data_version=V_raw|threshold_name=T_median_kept|high_fraction,0.5
+M1-V_raw-T_median_kept-ratio_error,V_raw T_median_kept ratio_error,outputs/M1/dataset_summary.csv,data_version=V_raw|threshold_name=T_median_kept|ratio_error,-0.1363636363636363
+M1-V_raw-T_1e4-threshold,V_raw T_1e4 threshold,outputs/M1/dataset_summary.csv,data_version=V_raw|threshold_name=T_1e4|threshold,0.0001
+M1-V_raw-T_1e4-n_high,V_raw T_1e4 n_high,outputs/M1/dataset_summary.csv,data_version=V_raw|threshold_name=T_1e4|n_high,152.0
+M1-V_raw-T_1e4-high_fraction,V_raw T_1e4 high_fraction,outputs/M1/dataset_summary.csv,data_version=V_raw|threshold_name=T_1e4|high_fraction,0.6972477064220184
+M1-V_raw-T_1e4-ratio_error,V_raw T_1e4 ratio_error,outputs/M1/dataset_summary.csv,data_version=V_raw|threshold_name=T_1e4|ratio_error,0.060884070058382
+M1-V_raw-T_ratio-threshold,V_raw T_ratio threshold,outputs/M1/dataset_summary.csv,data_version=V_raw|threshold_name=T_ratio|threshold,0.0001662
+M1-V_raw-T_ratio-n_high,V_raw T_ratio n_high,outputs/M1/dataset_summary.csv,data_version=V_raw|threshold_name=T_ratio|n_high,139.0
+M1-V_raw-T_ratio-high_fraction,V_raw T_ratio high_fraction,outputs/M1/dataset_summary.csv,data_version=V_raw|threshold_name=T_ratio|high_fraction,0.6376146788990825
+M1-V_raw-T_ratio-ratio_error,V_raw T_ratio ratio_error,outputs/M1/dataset_summary.csv,data_version=V_raw|threshold_name=T_ratio|ratio_error,0.0012510425354461
+M1-V_corr-T_main-threshold,V_corr T_main threshold,outputs/M1/dataset_summary.csv,data_version=V_corr|threshold_name=T_main|threshold,0.000269
+M1-V_corr-T_main-n_high,V_corr T_main n_high,outputs/M1/dataset_summary.csv,data_version=V_corr|threshold_name=T_main|n_high,109.0
+M1-V_corr-T_main-high_fraction,V_corr T_main high_fraction,outputs/M1/dataset_summary.csv,data_version=V_corr|threshold_name=T_main|high_fraction,0.5
+M1-V_corr-T_main-ratio_error,V_corr T_main ratio_error,outputs/M1/dataset_summary.csv,data_version=V_corr|threshold_name=T_main|ratio_error,-0.1363636363636363
+M1-V_corr-T_median_kept-threshold,V_corr T_median_kept threshold,outputs/M1/dataset_summary.csv,data_version=V_corr|threshold_name=T_median_kept|threshold,0.000269
+M1-V_corr-T_median_kept-n_high,V_corr T_median_kept n_high,outputs/M1/dataset_summary.csv,data_version=V_corr|threshold_name=T_median_kept|n_high,109.0
+M1-V_corr-T_median_kept-high_fraction,V_corr T_median_kept high_fraction,outputs/M1/dataset_summary.csv,data_version=V_corr|threshold_name=T_median_kept|high_fraction,0.5
+M1-V_corr-T_median_kept-ratio_error,V_corr T_median_kept ratio_error,outputs/M1/dataset_summary.csv,data_version=V_corr|threshold_name=T_median_kept|ratio_error,-0.1363636363636363
+M1-V_corr-T_1e4-threshold,V_corr T_1e4 threshold,outputs/M1/dataset_summary.csv,data_version=V_corr|threshold_name=T_1e4|threshold,0.0001
+M1-V_corr-T_1e4-n_high,V_corr T_1e4 n_high,outputs/M1/dataset_summary.csv,data_version=V_corr|threshold_name=T_1e4|n_high,152.0
+M1-V_corr-T_1e4-high_fraction,V_corr T_1e4 high_fraction,outputs/M1/dataset_summary.csv,data_version=V_corr|threshold_name=T_1e4|high_fraction,0.6972477064220184
+M1-V_corr-T_1e4-ratio_error,V_corr T_1e4 ratio_error,outputs/M1/dataset_summary.csv,data_version=V_corr|threshold_name=T_1e4|ratio_error,0.060884070058382
+M1-V_corr-T_ratio-threshold,V_corr T_ratio threshold,outputs/M1/dataset_summary.csv,data_version=V_corr|threshold_name=T_ratio|threshold,0.0001662
+M1-V_corr-T_ratio-n_high,V_corr T_ratio n_high,outputs/M1/dataset_summary.csv,data_version=V_corr|threshold_name=T_ratio|n_high,139.0
+M1-V_corr-T_ratio-high_fraction,V_corr T_ratio high_fraction,outputs/M1/dataset_summary.csv,data_version=V_corr|threshold_name=T_ratio|high_fraction,0.6376146788990825
+M1-V_corr-T_ratio-ratio_error,V_corr T_ratio ratio_error,outputs/M1/dataset_summary.csv,data_version=V_corr|threshold_name=T_ratio|ratio_error,0.0012510425354461
+M1-correct_issues,correct_issues,outputs/M1/validation.csv,key=correct_issues|value,5.0
+M1-expected_audit_cells,expected_audit_cells,outputs/M1/validation.csv,key=expected_audit_cells|value,9.0
+M1-actual_audit_cells,actual_audit_cells,outputs/M1/validation.csv,key=actual_audit_cells|value,9.0
+M1-imputation_runs,imputation_runs,outputs/M1/validation.csv,key=imputation_runs|value,20.0
+M1-convergence_warnings,convergence_warnings,outputs/M1/validation.csv,key=convergence_warnings|value,0.0
+M1-k12_records,k12_records,outputs/M1/validation.csv,key=k12_records|value,9.0
+M1-diagnostic_rows,diagnostic_rows,outputs/M1/validation.csv,key=diagnostic_rows|value,180.0
+M1-k12_used_in_model,k12_used_in_model,outputs/M1/validation.csv,key=k12_used_in_model|value,0.0
+M1-k12_max_abs_charge,k12_max_abs_charge,outputs/M1/validation.csv,key=k12_max_abs_charge|value,2.1742677031954507
+M1-protocol_status_frozen,protocol_status_frozen,outputs/M1/validation.csv,key=protocol_status_frozen|value,1.0
+M1-protected_files_match,protected_files_match,outputs/M1/validation.csv,key=protected_files_match|value,1.0
+M1-test-tests,测试验收 tests,outputs/M1/test_validation.csv,key=tests|value,25.0
+M1-test-failures,测试验收 failures,outputs/M1/test_validation.csv,key=failures|value,0.0
+M1-test-errors,测试验收 errors,outputs/M1/test_validation.csv,key=errors|value,0.0
+M1-test-skipped,测试验收 skipped,outputs/M1/test_validation.csv,key=skipped|value,0.0

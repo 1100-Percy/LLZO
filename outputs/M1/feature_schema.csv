@@ -1,0 +1,119 @@
+data_version,feature,kind
+V_raw,Li_comp,numeric
+V_raw,La_comp,numeric
+V_raw,Zr_comp,numeric
+V_raw,Li_site_sto,numeric
+V_raw,La_site_sto,numeric
+V_raw,Zr_site_sto,numeric
+V_raw,# of Dopants,numeric
+V_raw,%excess Li,numeric
+V_raw,1st Calcination Temp,numeric
+V_raw,1st Calcination Time,numeric
+V_raw,# of calcinations,numeric
+V_raw,Ball milling time,numeric
+V_raw,# of ball milling,numeric
+V_raw,Sintering Temperature,numeric
+V_raw,Sintering Time,numeric
+V_raw,Measurement Temperature,numeric
+V_raw,Li_site_elnv,numeric
+V_raw,Zr_site_elnv,numeric
+V_raw,Zr_site_irad,numeric
+V_raw,Zr_site_A,numeric
+V_raw,La_site_A,numeric
+V_raw,Li Precursor_Li2CO3,one_hot
+V_raw,Li Precursor_LiNO3,one_hot
+V_raw,Li Precursor_LiO2,one_hot
+V_raw,Li Precursor_LiOH,one_hot
+V_raw,Li Precursor_LiOH.H2O,one_hot
+V_raw,Li Precursor_missing,one_hot
+V_raw,La Precursor_La(OH)3,one_hot
+V_raw,La Precursor_La2O3,one_hot
+V_raw,La Precursor_missing,one_hot
+V_raw,Li_dop_0,one_hot
+V_raw,Li_dop_Al,one_hot
+V_raw,Li_dop_Al/Ga,one_hot
+V_raw,Li_dop_Fe,one_hot
+V_raw,Li_dop_Ga,one_hot
+V_raw,Li_dop_Zn,one_hot
+V_raw,Li_dop_missing,one_hot
+V_raw,La_dop_0,one_hot
+V_raw,La_dop_Ba,one_hot
+V_raw,La_dop_Sr,one_hot
+V_raw,La_dop_Y,one_hot
+V_raw,La_dop_missing,one_hot
+V_raw,Zr_dop_0,one_hot
+V_raw,Zr_dop_2,one_hot
+V_raw,Zr_dop_Gd,one_hot
+V_raw,Zr_dop_Mg,one_hot
+V_raw,Zr_dop_Nb,one_hot
+V_raw,Zr_dop_Nb/Gd,one_hot
+V_raw,Zr_dop_Nb/Y,one_hot
+V_raw,Zr_dop_Sb,one_hot
+V_raw,Zr_dop_Sc,one_hot
+V_raw,Zr_dop_Sm,one_hot
+V_raw,Zr_dop_Ta,one_hot
+V_raw,Zr_dop_Ta/Nb/Y,one_hot
+V_raw,Zr_dop_Te,one_hot
+V_raw,Zr_dop_Ti,one_hot
+V_raw,Zr_dop_W,one_hot
+V_raw,Zr_dop_Y,one_hot
+V_raw,Zr_dop_missing,one_hot
+V_corr,Li_comp,numeric
+V_corr,La_comp,numeric
+V_corr,Zr_comp,numeric
+V_corr,Li_site_sto,numeric
+V_corr,La_site_sto,numeric
+V_corr,Zr_site_sto,numeric
+V_corr,# of Dopants,numeric
+V_corr,%excess Li,numeric
+V_corr,1st Calcination Temp,numeric
+V_corr,1st Calcination Time,numeric
+V_corr,# of calcinations,numeric
+V_corr,Ball milling time,numeric
+V_corr,# of ball milling,numeric
+V_corr,Sintering Temperature,numeric
+V_corr,Sintering Time,numeric
+V_corr,Measurement Temperature,numeric
+V_corr,Li_site_elnv,numeric
+V_corr,Zr_site_elnv,numeric
+V_corr,Zr_site_irad,numeric
+V_corr,Zr_site_A,numeric
+V_corr,La_site_A,numeric
+V_corr,Li Precursor_Li2CO3,one_hot
+V_corr,Li Precursor_LiNO3,one_hot
+V_corr,Li Precursor_LiO2,one_hot
+V_corr,Li Precursor_LiOH,one_hot
+V_corr,Li Precursor_LiOH.H2O,one_hot
+V_corr,Li Precursor_missing,one_hot
+V_corr,La Precursor_La(OH)3,one_hot
+V_corr,La Precursor_La2O3,one_hot
+V_corr,La Precursor_missing,one_hot
+V_corr,Li_dop_0,one_hot
+V_corr,Li_dop_Al,one_hot
+V_corr,Li_dop_Al/Ga,one_hot
+V_corr,Li_dop_Fe,one_hot
+V_corr,Li_dop_Ga,one_hot
+V_corr,Li_dop_Zn,one_hot
+V_corr,Li_dop_missing,one_hot
+V_corr,La_dop_0,one_hot
+V_corr,La_dop_Ba,one_hot
+V_corr,La_dop_Sr,one_hot
+V_corr,La_dop_Y,one_hot
+V_corr,La_dop_missing,one_hot
+V_corr,Zr_dop_0,one_hot
+V_corr,Zr_dop_2,one_hot
+V_corr,Zr_dop_Gd,one_hot
+V_corr,Zr_dop_Mg,one_hot
+V_corr,Zr_dop_Nb,one_hot
+V_corr,Zr_dop_Nb/Gd,one_hot
+V_corr,Zr_dop_Nb/Y,one_hot
+V_corr,Zr_dop_Sb,one_hot
+V_corr,Zr_dop_Sc,one_hot
+V_corr,Zr_dop_Sm,one_hot
+V_corr,Zr_dop_Ta,one_hot
+V_corr,Zr_dop_Ta/Nb/Y,one_hot
+V_corr,Zr_dop_Te,one_hot
+V_corr,Zr_dop_Ti,one_hot
+V_corr,Zr_dop_W,one_hot
+V_corr,Zr_dop_Y,one_hot
+V_corr,Zr_dop_missing,one_hot

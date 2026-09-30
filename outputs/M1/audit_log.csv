@@ -1,0 +1,10 @@
+record_id,field,old,new,issue_id
+178,La_comp,0.0,3.0,K01
+178,Zr_comp,0.4,1.6,K01
+179,Zr_comp,0.4,1.6,K02
+180,Zr_comp,0.4,1.6,K02
+181,Zr_comp,0.4,1.6,K02
+143,La_comp,2.8,2.875,K05
+11,Li_dop,0.0,Al,K07
+11,Li_site_sto,0.0,0.25,K07
+29,Li_site_sto,0.42,0.4,K08
