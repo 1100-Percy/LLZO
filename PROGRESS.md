@@ -5,6 +5,7 @@
 - M2 完整计算正在运行；PID：`43699`。工作目录：`/Users/hanfengdexuexiji/.codex/worktrees/bba1/llzo_part1`。
 - 启动：通过 Python Popen 的 start_new_session=True 执行 nohup；等价命令：`OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1 nohup .venv/bin/python -u scripts/run_m2.py >> outputs/M2/run.log 2>&1 < /dev/null &`。
 - 日志：`outputs/M2/run.log`；状态：`outputs/M2/run_state.json`；逐任务完成标记：`outputs/M2/jobs/*/complete.json`。启动快照见 `outputs/M2/launch.json`。
+- 本次结束前进程核验：PID 存在且运行，状态快照显示已完成 25/330 个任务，当前为 full_RF_V_raw_A0_T_median_kept_seed1；以实时 run_state.json 为准。
 - 预计约 38–68 分钟（来自 outputs/M2/budget.csv 的短计时估计）；协议总预算仍有效。运行中的日志和状态文件会继续变化，log.meta.json 在结束时刷新为最终校验值。
 - 下一会话首先核对该 PID、状态和日志：仍运行则只更新进度并结束；失败则按 traceback 排查，保持配置不变后用同一命令续跑；完成则执行 `.venv/bin/python scripts/run_m2.py --verify`，更新 M2 完成状态并提交推送。不要启动 M3。
 
@@ -52,4 +53,5 @@
 - 完成模型训练与持久化模块、可续跑 M2 入口、完整任务清单、阈值反馈诊断和阶段 checkpoint；已启动完整后台计算，M2 保持 IN_PROGRESS。
 - 新增 D-013、D-014、D-015、D-016、D-017；没有新增 P-xxx，没有修改冻结协议或原始数据。
 - 完整测试 37 项通过（outputs/M2/test_validation.csv）；依赖产生弃用警告，测试无失败或跳过。
-- 本次提交后按人类反馈推送 GitHub。下一个会话先检查 PID 43699 与 outputs/M2/run.log，不做其他里程碑。
+- 阶段提交 `ae6a5b6460bf24f2daf8b74dd45525cbd41c2d9c` 已推送 GitHub main 并核对远端 SHA；新增反馈均已标记 [done]，随后将状态回填提交一并推送。
+- 下一个会话先检查 PID 43699 与 outputs/M2/run.log，不做其他里程碑。后台产生的模型、日志和状态尚未收取提交；这不是 M2 完整验收。
