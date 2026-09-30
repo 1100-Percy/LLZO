@@ -16,6 +16,12 @@
 - D-011 | 人类反馈 | HUMAN_FEEDBACK.md 明确授权安装 lightgbm、catboost 并推送 GitHub，覆盖 D-002 中针对缺包的联网安装限制。使用 `.venv/bin/python -m pip --isolated --disable-pip-version-check install --only-binary=:all: --index-url https://pypi.org/simple 'lightgbm>=4.0' 'catboost>=1.2'`，并安装必要的 Homebrew libomp 运行库；未修改冻结协议。包版本、合成数据检查与完整测试见 outputs/feedback_dependencies/ 和 reports/checkpoints/feedback_dependencies.md。此授权不扩展为无关依赖安装或 M2 执行。
 - D-012 | 人类反馈 | 默认 GitHub CLI 账号 aidhtech 对目标仓库无写权限；确认已保存的 1100-Percy 账号具有写权限后，仅在推送子进程使用该认证，不改全局账号、不保存或输出凭据。推送采用 HEAD:main 快进，不使用 force；完成后比对远端提交与本地 HEAD。
 
+- D-013 | M2 | 人类追加的分层/不分层类别计数仅作诊断，使用协议已有种子，报告“这些种子中是否观察到”，不搜索额外种子、不用非分层设置训练主模型。paper_targets 仅在生成比较列时读取；不据此改阈值或模型。
+- D-014 | M2 | 本研究选择：沿用 D-008 的先 test 后 validation 划分；训练仅使用 train，validation/test 不用于参数选择或最终 refit。全数据各阈值各种子全部训练；Ga 子集使用全数据确定的主阈值、全部协议种子；V_corr 按计划只训练主阈值主种子。模型文件分别置于 full、ga 子目录防止名称冲突。
+- D-015 | M2 | 本研究选择：分组验证限定 V_raw/A0/T_main/主种子，外层 StratifiedKFold、GroupKFold 与 LeaveOneGroupOut 并列；每个外层训练集内重新执行协议指定的 StratifiedKFold 网格调参。外层分组方式只用于验证，不选模型；LOSO 单类别测试折 ROC-AUC 为缺失并给出原因，同时报告 pooled OOF 指标。A0 按协议先在全部保留行拟合数值插补，包含无标签的验证输入，因此不得将本阶段称为无泄漏；A1 在后续敏感性阶段逐训练 fold 拟合。
+- D-016 | M2 | 本研究选择：所有算法单线程，GridSearchCV 单任务执行，固定随机种子；CB 禁止写额外训练文件，不 early-stop；AB 使用已安装 sklearn 的默认离散提升实现。内部模型使用固定顺序 f0、f1… 列名，持久化包保留原特征名与数值插补器，防止不同库对空格列名处理不一致。保存每个参数候选的 CV 得分，并验证重载预测与指标一致。
+- D-017 | M2 | 耗时估计基于每模型协议网格末项的短计时与完整任务拟合数，给出保守余量；不利用得分调整配置。长任务逐单元保存，只有完成标记、输入/源码/依赖指纹及输出哈希都匹配才允许复用。阶段提交只表示程序、诊断和后台启动完成；M2 完整验收必须等待所有任务结束。
+
 ### 协议冻结记录
 
 - M1 冻结提交：`015742b147be641d6e1c3de7a26a8ba5d53b4077`。

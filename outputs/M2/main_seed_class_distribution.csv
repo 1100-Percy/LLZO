@@ -1,0 +1,7 @@
+split_kind,true_0,true_1,n_seeds
+stratified,16,17,1
+stratified,17,16,4
+unstratified,13,20,2
+unstratified,15,18,1
+unstratified,16,17,1
+unstratified,17,16,1

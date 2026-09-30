@@ -1,0 +1,6 @@
+model,parameters,fit_seconds,grid_candidates,expected_fits,estimated_seconds
+DT,"{""max_depth"": null, ""min_samples_leaf"": 5}",0.0027304579999998246,12,4880,13.324635039999144
+RF,"{""max_depth"": null, ""max_features"": 0.5, ""min_samples_leaf"": 3, ""n_estimators"": 300}",0.17530429199999986,12,4880,855.4849449599993
+LGBM,"{""learning_rate"": 0.1, ""min_child_samples"": 10, ""n_estimators"": 500, ""num_leaves"": 15}",0.036067791999999876,16,6480,233.7192921599992
+CB,"{""depth"": 6, ""iterations"": 600, ""learning_rate"": 0.1}",0.32138616600000036,8,3485,1120.0307885100012
+AB,"{""learning_rate"": 1.0, ""n_estimators"": 300}",0.1888085829999997,6,155,29.265330364999954

@@ -1,0 +1,13 @@
+{
+  "pid": 43699,
+  "verified_state": {
+    "completed_jobs": 11,
+    "current_job": "full_CB_V_raw_A0_T_main_seed2",
+    "pid": 43699,
+    "started_unix": 1790741210.130831,
+    "status": "running",
+    "total_jobs": 330
+  },
+  "recorded_at": "2026-09-30T04:07:49.316957+00:00",
+  "log": "outputs/M2/run.log"
+}
