@@ -16,7 +16,7 @@
 - 数值结果见 outputs/M1/dataset_summary.csv、validation.csv；报告与登记结论已从 CSV 重新读取核对。
 - V_corr 仅执行 known_issues.csv 明确 correct 的项目；K12 被行过滤排除，只另行 transform 诊断，未放回训练集。
 - 已核对原始数据、io.py、chemistry.py 及原有事实测试的 SHA-256 均与 M0 相同；协议唯一改动为 status=frozen。
-- 冻结提交的 hash 按 D-010 在随后的文档提交回填，之后不得编辑 protocol_v1.yaml。
+- 冻结提交为 `015742b147be641d6e1c3de7a26a8ba5d53b4077`；hash 已按 D-010 回填至 DECISIONS.md，之后不得编辑 protocol_v1.yaml。
 
 ## 下一个会话从哪里开始
 - 先读 HUMAN_FEEDBACK.md，再从 PLAN.md 的 M2 开始。当前会话没有训练任何 M2 模型。
