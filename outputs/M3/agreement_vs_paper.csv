@@ -1,0 +1,77 @@
+panel_id,figure,cohort,model,feature,feature_2,target_id,target_kind,target_value,agreement,criterion,reason
+fig7_a,fig7,full,DT,Li_comp,,1,range,"[6.1, 6.4]",partial,D-020,目标与窗口有交集但集合不同
+fig7_a,fig7,full,DT,Li_comp,,2,peak,6.4,partial,D-020,论文峰位的最近网格点仅落在窗口内
+fig7_b,fig7,full,DT,Sintering Time,,1,range,"[18, 20]",partial,D-020,目标与窗口有交集但集合不同
+fig7_c,fig7,full,DT,Zr_site_sto,,1,range,"[0.18, 0.8]",partial,D-020,目标与窗口有交集但集合不同
+fig7_d,fig7,full,DT,1st Calcination Temp,,1,range,"[850, 900]",partial,D-020,目标与窗口有交集但集合不同
+fig7_e,fig7,full,DT,Zr_site_elnv,,1,greater,1.22,not_comparable,D-020,平坦或数据不足，不存在可比较窗口
+fig7_f,fig7,full,RF,Li_comp,,1,range,"[6.1, 6.4]",partial,D-020,目标与窗口有交集但集合不同
+fig7_f,fig7,full,RF,Li_comp,,2,peak,6.4,partial,D-020,论文峰位的最近网格点仅落在窗口内
+fig7_g,fig7,full,RF,Sintering Temperature,,1,peak,1200,partial,D-020,论文峰位的最近网格点仅落在窗口内
+fig7_h,fig7,full,RF,Zr_site_sto,,1,range,"[0.18, 0.8]",partial,D-020,目标与窗口有交集但集合不同
+fig7_h,fig7,full,RF,Zr_site_sto,,2,peak,0.25,partial,D-020,论文峰位的最近网格点仅落在窗口内
+fig7_i,fig7,full,RF,Li_site_sto,,1,range,"[0.2, 0.3]",partial,D-020,目标与窗口有交集但集合不同
+fig7_i,fig7,full,RF,Li_site_sto,,2,peak,0.24,partial,D-020,论文峰位的最近网格点仅落在窗口内
+fig7_j,fig7,full,RF,Sintering Time,,1,peak,20,not_comparable,D-020,平坦或数据不足，不存在可比较窗口
+fig7_k,fig7,full,LGBM,Li_comp,,1,range,"[6.1, 6.4]",partial,D-020,目标与窗口有交集但集合不同
+fig7_k,fig7,full,LGBM,Li_comp,,2,peak,6.4,partial,D-020,论文峰位的最近网格点仅落在窗口内
+fig7_l,fig7,full,LGBM,Ball milling time,,1,qualitative,"""{}""",not_comparable,D-020,无预先声明的可操作数值判据
+fig7_m,fig7,full,LGBM,Sintering Temperature,,1,peak,1200,partial,D-020,论文峰位的最近网格点仅落在窗口内
+fig7_n,fig7,full,LGBM,Zr_comp,,1,qualitative,"""{\""LGBM\"": 1.9, \""CB\"": 1.5, \""panels\"": \""Fig7 n,r\""}""",not_comparable,D-020,无预先声明的可操作数值判据
+fig7_o,fig7,full,LGBM,Sintering Time,,1,qualitative,"""{\""DT\"": [18, 20], \""RF_peak\"": 20, \""panels\"": \""Fig7 b,j\""}""",not_comparable,D-020,无预先声明的可操作数值判据
+fig7_p,fig7,full,CB,Li_comp,,1,range,"[6.1, 6.4]",partial,D-020,目标与窗口有交集但集合不同
+fig7_p,fig7,full,CB,Li_comp,,2,peak,6.4,agree,D-020,论文峰位的最近网格点与首个峰位一致
+fig7_q,fig7,full,CB,Sintering Temperature,,1,peak,1200,partial,D-020,论文峰位的最近网格点仅落在窗口内
+fig7_r,fig7,full,CB,Zr_comp,,1,qualitative,"""{\""LGBM\"": 1.9, \""CB\"": 1.5, \""panels\"": \""Fig7 n,r\""}""",not_comparable,D-020,无预先声明的可操作数值判据
+fig7_s,fig7,full,CB,Zr_site_elnv,,1,greater,1.22,not_comparable,D-020,平坦或数据不足，不存在可比较窗口
+fig7_t,fig7,full,CB,Li_site_sto,,1,range,"[0.2, 0.3]",not_comparable,D-020,平坦或数据不足，不存在可比较窗口
+fig7_t,fig7,full,CB,Li_site_sto,,2,peak,0.24,not_comparable,D-020,平坦或数据不足，不存在可比较窗口
+fig9_a,fig9,full,DT,Li_comp,Sintering Time,1,qualitative,"""high probability consistently near Li_comp ~ 6.4""",not_comparable,D-020,无预先声明的可操作数值判据
+fig9_b,fig9,full,DT,Li_comp,1st Calcination Temp,1,qualitative,"""high probability consistently near Li_comp ~ 6.4""",not_comparable,D-020,无预先声明的可操作数值判据
+fig9_c,fig9,full,DT,Li_comp,Zr_site_sto,1,qualitative,"""high probability consistently near Li_comp ~ 6.4""",not_comparable,D-020,无预先声明的可操作数值判据
+fig9_c,fig9,full,DT,Li_comp,Zr_site_sto,2,qualitative,"""DT: optimal Li range widens for Zr-site dopant amount 0.3-0.8 (Fig 9c)""",not_comparable,D-020,无预先声明的可操作数值判据
+fig9_c,fig9,full,DT,Li_comp,Zr_site_sto,3,qualitative,"""DT: optimal Li_comp 7.2 when Zr_site_elnv > 1 (Fig 9c,d)""",not_comparable,D-020,无预先声明的可操作数值判据
+fig9_d,fig9,full,DT,Li_comp,Zr_site_elnv,1,qualitative,"""high probability consistently near Li_comp ~ 6.4""",not_comparable,D-020,无预先声明的可操作数值判据
+fig9_d,fig9,full,DT,Li_comp,Zr_site_elnv,2,qualitative,"""DT: optimal Li_comp 7.2 when Zr_site_elnv > 1 (Fig 9c,d)""",not_comparable,D-020,无预先声明的可操作数值判据
+fig9_e,fig9,full,RF,Li_comp,Sintering Time,1,qualitative,"""high probability consistently near Li_comp ~ 6.4""",not_comparable,D-020,无预先声明的可操作数值判据
+fig9_f,fig9,full,RF,Li_comp,Sintering Temperature,1,qualitative,"""high probability consistently near Li_comp ~ 6.4""",not_comparable,D-020,无预先声明的可操作数值判据
+fig9_g,fig9,full,RF,Li_comp,Zr_site_sto,1,qualitative,"""high probability consistently near Li_comp ~ 6.4""",not_comparable,D-020,无预先声明的可操作数值判据
+fig9_h,fig9,full,RF,Li_comp,Li_site_sto,1,qualitative,"""high probability consistently near Li_comp ~ 6.4""",not_comparable,D-020,无预先声明的可操作数值判据
+fig9_i,fig9,full,LGBM,Li_comp,Sintering Time,1,qualitative,"""high probability consistently near Li_comp ~ 6.4""",not_comparable,D-020,无预先声明的可操作数值判据
+fig9_j,fig9,full,LGBM,Li_comp,Sintering Temperature,1,qualitative,"""high probability consistently near Li_comp ~ 6.4""",not_comparable,D-020,无预先声明的可操作数值判据
+fig9_k,fig9,full,LGBM,Li_comp,Zr_comp,1,qualitative,"""high probability consistently near Li_comp ~ 6.4""",not_comparable,D-020,无预先声明的可操作数值判据
+fig9_l,fig9,full,LGBM,Li_comp,Ball milling time,1,qualitative,"""high probability consistently near Li_comp ~ 6.4""",not_comparable,D-020,无预先声明的可操作数值判据
+fig9_m,fig9,full,CB,Li_comp,Zr_site_elnv,1,qualitative,"""high probability consistently near Li_comp ~ 6.4""",not_comparable,D-020,无预先声明的可操作数值判据
+fig9_n,fig9,full,CB,Li_comp,Sintering Temperature,1,qualitative,"""high probability consistently near Li_comp ~ 6.4""",not_comparable,D-020,无预先声明的可操作数值判据
+fig9_o,fig9,full,CB,Li_comp,Zr_comp,1,qualitative,"""high probability consistently near Li_comp ~ 6.4""",not_comparable,D-020,无预先声明的可操作数值判据
+fig9_p,fig9,full,CB,Li_comp,Li_site_sto,1,qualitative,"""high probability consistently near Li_comp ~ 6.4""",not_comparable,D-020,无预先声明的可操作数值判据
+fig12_a,fig12,ga,CB,Li_comp,,1,qualitative,"""high (~0.8) for 6.0-6.5, drops to ~0.2 by 7.0""",not_comparable,D-020,无预先声明的可操作数值判据
+fig12_b,fig12,ga,CB,1st Calcination Temp,,1,qualitative,"""calcination_T=1000; 未明确窗口或峰位判据""",not_comparable,D-020,无预先声明的可操作数值判据
+fig12_c,fig12,ga,CB,%excess Li,,1,qualitative,"""paper_targets 未给出该面板的数值窗口""",not_comparable,D-020,无预先声明的可操作数值判据
+fig12_d,fig12,ga,CB,Sintering Time,,1,peak,12,disagree,D-020,论文峰位的最近网格点不在窗口内
+fig12_e,fig12,ga,CB,Li_site_sto,,1,qualitative,"""increasing from ~0.56 to ~0.62 over 0-0.45""",not_comparable,D-020,无预先声明的可操作数值判据
+fig12_f,fig12,ga,AB,Li_comp,,1,qualitative,"""paper_targets 未给出该面板的数值窗口""",not_comparable,D-020,无预先声明的可操作数值判据
+fig12_g,fig12,ga,AB,Li_site_elnv,,1,qualitative,"""paper_targets 未给出该面板的数值窗口""",not_comparable,D-020,无预先声明的可操作数值判据
+fig12_h,fig12,ga,AB,Ball milling time,,1,qualitative,"""paper_targets 未给出该面板的数值窗口""",not_comparable,D-020,无预先声明的可操作数值判据
+fig12_i,fig12,ga,AB,Li_site_sto,,1,qualitative,"""paper_targets 未给出该面板的数值窗口""",not_comparable,D-020,无预先声明的可操作数值判据
+fig12_j,fig12,ga,AB,1st Calcination Temp,,1,qualitative,"""calcination_T=1000; 未明确窗口或峰位判据""",not_comparable,D-020,无预先声明的可操作数值判据
+own_DT_1,own_top5,full,DT,Li_comp,,1,qualitative,"""本模型自行选取的特征面板，不对应论文面板""",not_comparable,D-020,无预先声明的可操作数值判据
+own_DT_2,own_top5,full,DT,1st Calcination Temp,,1,qualitative,"""本模型自行选取的特征面板，不对应论文面板""",not_comparable,D-020,无预先声明的可操作数值判据
+own_DT_3,own_top5,full,DT,Sintering Time,,1,qualitative,"""本模型自行选取的特征面板，不对应论文面板""",not_comparable,D-020,无预先声明的可操作数值判据
+own_DT_4,own_top5,full,DT,Li Precursor_Li2CO3,,1,qualitative,"""本模型自行选取的特征面板，不对应论文面板""",not_comparable,D-020,无预先声明的可操作数值判据
+own_DT_5,own_top5,full,DT,Zr_site_sto,,1,qualitative,"""本模型自行选取的特征面板，不对应论文面板""",not_comparable,D-020,无预先声明的可操作数值判据
+own_RF_1,own_top5,full,RF,Li_comp,,1,qualitative,"""本模型自行选取的特征面板，不对应论文面板""",not_comparable,D-020,无预先声明的可操作数值判据
+own_RF_2,own_top5,full,RF,Sintering Temperature,,1,qualitative,"""本模型自行选取的特征面板，不对应论文面板""",not_comparable,D-020,无预先声明的可操作数值判据
+own_RF_3,own_top5,full,RF,Sintering Time,,1,qualitative,"""本模型自行选取的特征面板，不对应论文面板""",not_comparable,D-020,无预先声明的可操作数值判据
+own_RF_4,own_top5,full,RF,Zr_site_sto,,1,qualitative,"""本模型自行选取的特征面板，不对应论文面板""",not_comparable,D-020,无预先声明的可操作数值判据
+own_RF_5,own_top5,full,RF,Li_site_sto,,1,qualitative,"""本模型自行选取的特征面板，不对应论文面板""",not_comparable,D-020,无预先声明的可操作数值判据
+own_LGBM_1,own_top5,full,LGBM,Li_comp,,1,qualitative,"""本模型自行选取的特征面板，不对应论文面板""",not_comparable,D-020,无预先声明的可操作数值判据
+own_LGBM_2,own_top5,full,LGBM,Sintering Temperature,,1,qualitative,"""本模型自行选取的特征面板，不对应论文面板""",not_comparable,D-020,无预先声明的可操作数值判据
+own_LGBM_3,own_top5,full,LGBM,1st Calcination Temp,,1,qualitative,"""本模型自行选取的特征面板，不对应论文面板""",not_comparable,D-020,无预先声明的可操作数值判据
+own_LGBM_4,own_top5,full,LGBM,%excess Li,,1,qualitative,"""本模型自行选取的特征面板，不对应论文面板""",not_comparable,D-020,无预先声明的可操作数值判据
+own_LGBM_5,own_top5,full,LGBM,Li_site_sto,,1,qualitative,"""本模型自行选取的特征面板，不对应论文面板""",not_comparable,D-020,无预先声明的可操作数值判据
+own_CB_1,own_top5,full,CB,Li_comp,,1,qualitative,"""本模型自行选取的特征面板，不对应论文面板""",not_comparable,D-020,无预先声明的可操作数值判据
+own_CB_2,own_top5,full,CB,Sintering Temperature,,1,qualitative,"""本模型自行选取的特征面板，不对应论文面板""",not_comparable,D-020,无预先声明的可操作数值判据
+own_CB_3,own_top5,full,CB,Sintering Time,,1,qualitative,"""本模型自行选取的特征面板，不对应论文面板""",not_comparable,D-020,无预先声明的可操作数值判据
+own_CB_4,own_top5,full,CB,%excess Li,,1,qualitative,"""本模型自行选取的特征面板，不对应论文面板""",not_comparable,D-020,无预先声明的可操作数值判据
+own_CB_5,own_top5,full,CB,Li_site_sto,,1,qualitative,"""本模型自行选取的特征面板，不对应论文面板""",not_comparable,D-020,无预先声明的可操作数值判据

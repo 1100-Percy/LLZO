@@ -1,0 +1,51 @@
+panel_id,figure,cohort,model,feature,feature_2,lower,upper,peak_x,amplitude,n_segments,status,segments,data_version,scheme,background,grid
+fig7_a,fig7,full,DT,Li_comp,,5.0,6.64,6.25,0.4714912280701755,1,single,"[[5.0, 6.64]]",V_raw,A,B_train,G1
+fig7_b,fig7,full,DT,Sintering Time,,18.0,30.0,18.0,0.09868421052631576,1,single,"[[18.0, 30.0]]",V_raw,A,B_train,G1
+fig7_c,fig7,full,DT,Zr_site_sto,,0.0,0.8,0.8,0.48684210526315785,1,single,"[[0.0, 0.8]]",V_raw,A,B_train,G1
+fig7_d,fig7,full,DT,1st Calcination Temp,,900.0,900.0,900.0,0.23903508771929827,1,single,"[[900.0, 900.0]]",V_raw,A,B_train,G1
+fig7_e,fig7,full,DT,Zr_site_elnv,,,,0.0,0.0,0,flat,[],V_raw,A,B_train,G1
+fig7_f,fig7,full,RF,Li_comp,,5.0,6.6,6.25,0.1370117172103938,3,split,"[[5.0, 5.95], [6.15, 6.46], [6.6, 6.6]]",V_raw,A,B_train,G1
+fig7_g,fig7,full,RF,Sintering Temperature,,1170.0,1230.0,1180.0,0.1138385554808754,1,single,"[[1170.0, 1230.0]]",V_raw,A,B_train,G1
+fig7_h,fig7,full,RF,Zr_site_sto,,0.25,0.8,0.4,0.0924768291095368,1,single,"[[0.25, 0.8]]",V_raw,A,B_train,G1
+fig7_i,fig7,full,RF,Li_site_sto,,0.2,0.42,0.4,0.10665966260791171,1,single,"[[0.2, 0.42]]",V_raw,A,B_train,G1
+fig7_j,fig7,full,RF,Sintering Time,,,,30.0,0.03434896110998947,0,flat,[],V_raw,A,B_train,G1
+fig7_k,fig7,full,LGBM,Li_comp,,5.0,6.75,6.35,0.2492686563834311,2,split,"[[5.0, 5.95], [6.2, 6.75]]",V_raw,A,B_train,G1
+fig7_l,fig7,full,LGBM,Ball milling time,,,,6.0,0.029173312890590053,0,flat,[],V_raw,A,B_train,G1
+fig7_m,fig7,full,LGBM,Sintering Temperature,,1100.0,1300.0,1170.0,0.2866134792636481,1,single,"[[1100.0, 1300.0]]",V_raw,A,B_train,G1
+fig7_n,fig7,full,LGBM,Zr_comp,,0.4,1.2,0.4,0.06132270600774614,1,single,"[[0.4, 1.2]]",V_raw,A,B_train,G1
+fig7_o,fig7,full,LGBM,Sintering Time,,16.0,36.0,16.0,0.05768471645035994,1,single,"[[16.0, 36.0]]",V_raw,A,B_train,G1
+fig7_p,fig7,full,CB,Li_comp,,6.1,6.66,6.4,0.3574530797234378,1,single,"[[6.1, 6.66]]",V_raw,A,B_train,G1
+fig7_q,fig7,full,CB,Sintering Temperature,,1100.0,1300.0,1100.0,0.21094004534893407,1,single,"[[1100.0, 1300.0]]",V_raw,A,B_train,G1
+fig7_r,fig7,full,CB,Zr_comp,,,,1.2,0.011200654581511815,0,flat,[],V_raw,A,B_train,G1
+fig7_s,fig7,full,CB,Zr_site_elnv,,,,1.5,0.004235779780754012,0,flat,[],V_raw,A,B_train,G1
+fig7_t,fig7,full,CB,Li_site_sto,,,,0.4,0.043842546690572526,0,flat,[],V_raw,A,B_train,G1
+fig12_a,fig12,ga,CB,Li_comp,,5.8,6.4,5.8,0.49044863196777144,1,single,"[[5.8, 6.4]]",V_raw,A,B_train,G1
+fig12_b,fig12,ga,CB,1st Calcination Temp,,1000.0,1000.0,1000.0,0.10926321869737932,1,single,"[[1000.0, 1000.0]]",V_raw,A,B_train,G1
+fig12_c,fig12,ga,CB,%excess Li,,,,5.0,0.017159927472104042,0,flat,[],V_raw,A,B_train,G1
+fig12_d,fig12,ga,CB,Sintering Time,,0.66,5.3,0.66,0.10084564950883412,1,single,"[[0.66, 5.3]]",V_raw,A,B_train,G1
+fig12_e,fig12,ga,CB,Li_site_sto,,0.2,0.42,0.2,0.1512728293762493,1,single,"[[0.2, 0.42]]",V_raw,A,B_train,G1
+fig12_f,fig12,ga,AB,Li_comp,,5.8,5.95,5.8,0.1145036029983087,1,single,"[[5.8, 5.95]]",V_raw,A,B_train,G1
+fig12_g,fig12,ga,AB,Li_site_elnv,,,,1.66,0.0,0,flat,[],V_raw,A,B_train,G1
+fig12_h,fig12,ga,AB,Ball milling time,,,,0.083,0.010399414978039201,0,flat,[],V_raw,A,B_train,G1
+fig12_i,fig12,ga,AB,Li_site_sto,,0.2,0.42,0.2,0.09151491257740746,1,single,"[[0.2, 0.42]]",V_raw,A,B_train,G1
+fig12_j,fig12,ga,AB,1st Calcination Temp,,800.0,1000.0,1000.0,0.05656630174608046,2,split,"[[800.0, 900.0], [1000.0, 1000.0]]",V_raw,A,B_train,G1
+own_DT_1,own_top5,full,DT,Li_comp,,5.0,6.64,6.25,0.4714912280701755,1,single,"[[5.0, 6.64]]",V_raw,A,B_train,G1
+own_DT_2,own_top5,full,DT,1st Calcination Temp,,900.0,900.0,900.0,0.23903508771929827,1,single,"[[900.0, 900.0]]",V_raw,A,B_train,G1
+own_DT_3,own_top5,full,DT,Sintering Time,,18.0,30.0,18.0,0.09868421052631576,1,single,"[[18.0, 30.0]]",V_raw,A,B_train,G1
+own_DT_4,own_top5,full,DT,Li Precursor_Li2CO3,,0.0,0.0,0.0,0.28508771929824556,1,single,"[[0.0, 0.0]]",V_raw,A,B_train,G1
+own_DT_5,own_top5,full,DT,Zr_site_sto,,0.0,0.8,0.8,0.48684210526315785,1,single,"[[0.0, 0.8]]",V_raw,A,B_train,G1
+own_RF_1,own_top5,full,RF,Li_comp,,5.0,6.6,6.25,0.1370117172103938,3,split,"[[5.0, 5.95], [6.15, 6.46], [6.6, 6.6]]",V_raw,A,B_train,G1
+own_RF_2,own_top5,full,RF,Sintering Temperature,,1170.0,1230.0,1180.0,0.1138385554808754,1,single,"[[1170.0, 1230.0]]",V_raw,A,B_train,G1
+own_RF_3,own_top5,full,RF,Sintering Time,,,,30.0,0.03434896110998947,0,flat,[],V_raw,A,B_train,G1
+own_RF_4,own_top5,full,RF,Zr_site_sto,,0.25,0.8,0.4,0.0924768291095368,1,single,"[[0.25, 0.8]]",V_raw,A,B_train,G1
+own_RF_5,own_top5,full,RF,Li_site_sto,,0.2,0.42,0.4,0.10665966260791171,1,single,"[[0.2, 0.42]]",V_raw,A,B_train,G1
+own_LGBM_1,own_top5,full,LGBM,Li_comp,,5.0,6.75,6.35,0.2492686563834311,2,split,"[[5.0, 5.95], [6.2, 6.75]]",V_raw,A,B_train,G1
+own_LGBM_2,own_top5,full,LGBM,Sintering Temperature,,1100.0,1300.0,1170.0,0.2866134792636481,1,single,"[[1100.0, 1300.0]]",V_raw,A,B_train,G1
+own_LGBM_3,own_top5,full,LGBM,1st Calcination Temp,,700.0,900.0,900.0,0.10805117094082611,2,split,"[[700.0, 750.0], [850.0, 900.0]]",V_raw,A,B_train,G1
+own_LGBM_4,own_top5,full,LGBM,%excess Li,,23.2,50.0,34.4,0.2030056375879345,1,single,"[[23.2, 50.0]]",V_raw,A,B_train,G1
+own_LGBM_5,own_top5,full,LGBM,Li_site_sto,,0.2,0.42,0.2,0.16208382141625677,1,single,"[[0.2, 0.42]]",V_raw,A,B_train,G1
+own_CB_1,own_top5,full,CB,Li_comp,,6.1,6.66,6.4,0.3574530797234378,1,single,"[[6.1, 6.66]]",V_raw,A,B_train,G1
+own_CB_2,own_top5,full,CB,Sintering Temperature,,1100.0,1300.0,1100.0,0.21094004534893407,1,single,"[[1100.0, 1300.0]]",V_raw,A,B_train,G1
+own_CB_3,own_top5,full,CB,Sintering Time,,,,30.0,0.04031601607226293,0,flat,[],V_raw,A,B_train,G1
+own_CB_4,own_top5,full,CB,%excess Li,,40.0,50.0,50.0,0.15363925564720826,1,single,"[[40.0, 50.0]]",V_raw,A,B_train,G1
+own_CB_5,own_top5,full,CB,Li_site_sto,,,,0.4,0.043842546690572526,0,flat,[],V_raw,A,B_train,G1

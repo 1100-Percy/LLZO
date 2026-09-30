@@ -2,11 +2,17 @@
 - M-1 (human, pre-Codex): scaffold, verified data facts (tests/test_data_facts.py), chemistry utils (tests/test_chemistry.py). 14 tests green.
 
 ## 后台任务
-- M2 后台计算已完成；没有待收取的运行中任务。原 PID：`43699`；工作目录：`/Users/hanfengdexuexiji/.codex/worktrees/bba1/llzo_part1`。
-- 原启动命令：`OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1 nohup .venv/bin/python -u scripts/run_m2.py >> outputs/M2/run.log 2>&1 < /dev/null &`。
-- `outputs/M2/run.log` 记录正常完成，`run_state.json` 为 complete；已完成 330 个任务（读取 completion_summary.csv）。
-- 本次已运行 `.venv/bin/python scripts/run_m2.py --verify`，全部模型重载预测与指标一致，完整测试通过。报告刷新命令：`.venv/bin/python scripts/finalize_m2.py`。
-- 当前会话只完成 M2；下一个会话从 M3 开始。下方历史启动摘要不代表当前运行状态。
+- 无运行中的后台计算。M3 已在本会话前台完成，`outputs/M3/run_state.json` 为 complete；日志见 `outputs/M3/run.log`。
+- 完整命令：`OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=/tmp/llzo_m3_mpl .venv/bin/python -u scripts/run_m3.py > outputs/M3/run.log 2>&1`。
+- 本次无需 nohup：耗时探测见 outputs/M3/budget.csv，实际完成时长见 run_state.json。M2 历史后台计算也已完成，勿重启。
+
+## M3 完成
+- 新增 pdp.py 与数值引擎测试：G1/G2、单变量 ICE、双变量虚拟输入、联动更新接口及冻结窗口规则。
+- 新增 scripts/run_m3.py 与入口回归测试，全部概率由 M2 已保存的主设置模型生成；未重新训练模型。
+- 已生成论文指定面板 46 个及模型自身前五面板 20 个，保存 1644048 条虚拟输入、50 条单变量窗口与 76 条对照记录（读取 outputs/M3/validation.csv）。
+- 每张图有同名 CSV 和原始训练观测 rug；完整插补背景与紧凑虚拟输入共同支持重建。已从磁盘重读背景，核对曲线聚合、窗口边界和抽样预测。
+- `.venv/bin/python scripts/run_m3.py --verify` 可复核产物并生成完整测试、checkpoint 与 claims；`--prepare` 仅更新耗时探测，不覆盖既有生成指纹。
+- 完整测试 96 项通过；关键结果及需要人工查看的项目见 reports/checkpoints/M3.md。
 
 ## M2 执行步骤
 - [x] 新增 src/llzo_pdp/models.py 与 tests/test_models.py：确定性分层划分、固定网格、概率指标、模型重载验证；先运行新增测试确认缺失行为，再实现并通过。
@@ -32,7 +38,7 @@
 - 冻结提交为 `015742b147be641d6e1c3de7a26a8ba5d53b4077`；hash 已按 D-010 回填至 DECISIONS.md，之后不得编辑 protocol_v1.yaml。
 
 ## 下一个会话从哪里开始
-- 先读 AGENTS.md、HUMAN_FEEDBACK.md 与本文件；M2 已验收，无运行中后台任务。按 PLAN.md 开始 M3，仅执行该里程碑；本次没有启动 M3。
+- 先读 AGENTS.md、HUMAN_FEEDBACK.md 与本文件；M3 已验收，无运行中后台任务。按 PLAN.md 开始 M4，仅执行该里程碑；本次没有启动 M4。
 - 模型依赖已按人类反馈授权补齐，包含 LightGBM 所需 libomp；当前验证结果见 outputs/feedback_dependencies/。D-002 为历史限制，新的授权与处理见 D-011。
 - M1 的 A1 矩阵只适用于已保存的主阈值划分；M2 更换阈值、验证折或分组时须在相应训练行重新拟合插补器，防止泄漏。
 - 当前后台任务以本文件开头的“后台任务”为准；下方旧会话摘要为历史记录。
@@ -74,3 +80,11 @@
 - 推送后远端与本地均为 `9cfbb0e29f6813c68654ac87f3a297b380e5da0c`，已通过 `git ls-remote` 核验；本次状态回填随后另作纯文档提交并同步。
 - 新增 D-/P- 编号：无。本次仅推送及更新状态文档，未改代码、数据或协议，未重跑测试；沿用 M2 验收的完整测试结果，见 outputs/M2/test_validation.csv。
 - 下一个会话从新反馈检查与 M3 开始；本次没有启动 M3。
+
+## 本次会话摘要（M3 完成）
+- 完成 M3 引擎、主设置全部面板、虚拟输入保存、窗口提取、论文一致性对照、中文 checkpoint 与 claims 登记；PLAN.md 中 M3 已标为 DONE。
+- 新增 D-018、D-019、D-020、D-021；无 P-xxx。网格、背景、分段窗口和论文对照判据均在生成曲线前登记，未改变冻结协议或原始数据。
+- 完整测试 96 项通过，无失败、错误或跳过（读取 outputs/M3/test_validation.csv）。新增回归测试确认耗时探测不会覆盖历史产物指纹。
+- 已核对产物与配套元数据、当前源码指纹、逐条 M3 claims，以及历史受保护文件哈希；规范审查、代码复审和图像抽查通过。
+- 本次只完成 M3；化学残差及支持标签仍留空，定性或含义不明确的论文目标仍为 not_comparable。
+- 提交并按持续授权推送至 GitHub main；提交 hash 在下一次纯文档回填记录。下一个会话先处理新反馈，再开始 M4，不重跑 M2/M3。

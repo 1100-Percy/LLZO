@@ -1,0 +1,99 @@
+[1/66] fig7_a: 5624 virtual inputs
+[2/66] fig7_b: 2736 virtual inputs
+[3/66] fig7_c: 2736 virtual inputs
+[4/66] fig7_d: 1064 virtual inputs
+[5/66] fig7_e: 2128 virtual inputs
+[6/66] fig7_f: 5624 virtual inputs
+[7/66] fig7_g: 2280 virtual inputs
+[8/66] fig7_h: 2736 virtual inputs
+[9/66] fig7_i: 2432 virtual inputs
+[10/66] fig7_j: 2736 virtual inputs
+[11/66] fig7_k: 5624 virtual inputs
+[12/66] fig7_l: 3952 virtual inputs
+[13/66] fig7_m: 2280 virtual inputs
+[14/66] fig7_n: 3192 virtual inputs
+[15/66] fig7_o: 2736 virtual inputs
+[16/66] fig7_p: 5624 virtual inputs
+[17/66] fig7_q: 2280 virtual inputs
+[18/66] fig7_r: 3192 virtual inputs
+[19/66] fig7_s: 2128 virtual inputs
+[20/66] fig7_t: 2432 virtual inputs
+[21/66] fig9_a: 101232 virtual inputs
+[22/66] fig9_b: 39368 virtual inputs
+[23/66] fig9_c: 101232 virtual inputs
+[24/66] fig9_d: 78736 virtual inputs
+[25/66] fig9_e: 101232 virtual inputs
+[26/66] fig9_f: 84360 virtual inputs
+[27/66] fig9_g: 101232 virtual inputs
+[28/66] fig9_h: 89984 virtual inputs
+[29/66] fig9_i: 101232 virtual inputs
+[30/66] fig9_j: 84360 virtual inputs
+[31/66] fig9_k: 118104 virtual inputs
+[32/66] fig9_l: 146224 virtual inputs
+[33/66] fig9_m: 78736 virtual inputs
+[34/66] fig9_n: 84360 virtual inputs
+[35/66] fig9_o: 118104 virtual inputs
+[36/66] fig9_p: 89984 virtual inputs
+[37/66] fig12_a: 840 virtual inputs
+[38/66] fig12_b: 300 virtual inputs
+[39/66] fig12_c: 360 virtual inputs
+[40/66] fig12_d: 660 virtual inputs
+[41/66] fig12_e: 720 virtual inputs
+[42/66] fig12_f: 840 virtual inputs
+[43/66] fig12_g: 300 virtual inputs
+[44/66] fig12_h: 600 virtual inputs
+[45/66] fig12_i: 720 virtual inputs
+[46/66] fig12_j: 300 virtual inputs
+[47/66] own_DT_1: 5624 virtual inputs
+[48/66] own_DT_2: 1064 virtual inputs
+[49/66] own_DT_3: 2736 virtual inputs
+[50/66] own_DT_4: 304 virtual inputs
+[51/66] own_DT_5: 2736 virtual inputs
+[52/66] own_RF_1: 5624 virtual inputs
+[53/66] own_RF_2: 2280 virtual inputs
+[54/66] own_RF_3: 2736 virtual inputs
+[55/66] own_RF_4: 2736 virtual inputs
+[56/66] own_RF_5: 2432 virtual inputs
+[57/66] own_LGBM_1: 5624 virtual inputs
+[58/66] own_LGBM_2: 2280 virtual inputs
+[59/66] own_LGBM_3: 1064 virtual inputs
+[60/66] own_LGBM_4: 1824 virtual inputs
+[61/66] own_LGBM_5: 2432 virtual inputs
+[62/66] own_CB_1: 5624 virtual inputs
+[63/66] own_CB_2: 2280 virtual inputs
+[64/66] own_CB_3: 2736 virtual inputs
+[65/66] own_CB_4: 1824 virtual inputs
+[66/66] own_CB_5: 2432 virtual inputs
+........................................................................ [ 75%]
+........................                                                 [100%]
+=============================== warnings summary ===============================
+tests/test_m3.py::test_panel_plan_covers_paper_and_own_features
+  /Users/hanfengdexuexiji/Library/Python/3.9/lib/python/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+    prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+
+tests/test_m3.py::test_panel_plan_covers_paper_and_own_features
+tests/test_m3.py::test_panel_plan_covers_paper_and_own_features
+tests/test_m3.py::test_panel_plan_covers_paper_and_own_features
+tests/test_m3.py::test_panel_plan_covers_paper_and_own_features
+tests/test_m3.py::test_panel_plan_covers_paper_and_own_features
+tests/test_m3.py::test_panel_plan_covers_paper_and_own_features
+  /Users/hanfengdexuexiji/Library/Python/3.9/lib/python/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    parse = parser.parseString(pattern)
+
+tests/test_m3.py::test_panel_plan_covers_paper_and_own_features
+tests/test_m3.py::test_panel_plan_covers_paper_and_own_features
+tests/test_m3.py::test_panel_plan_covers_paper_and_own_features
+tests/test_m3.py::test_panel_plan_covers_paper_and_own_features
+tests/test_m3.py::test_panel_plan_covers_paper_and_own_features
+tests/test_m3.py::test_panel_plan_covers_paper_and_own_features
+  /Users/hanfengdexuexiji/Library/Python/3.9/lib/python/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+    parser.resetCache()
+
+tests/test_m3.py::test_panel_plan_covers_paper_and_own_features
+  /Users/hanfengdexuexiji/Library/Python/3.9/lib/python/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+    ParserElement.enablePackrat()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /var/folders/t2/9bk3bnqx2qgc7qzy9mcqsw7w0000gn/T/tmp3gss8tsa/tests.xml -
+96 passed, 14 warnings in 18.29s
+M3 COMPLETE; panels, virtual inputs and model reconstruction verified.

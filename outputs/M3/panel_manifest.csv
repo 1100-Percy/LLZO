@@ -1,0 +1,67 @@
+panel_id,figure,cohort,model,feature,feature_2,virtual_rows,grid_points,background_rows,virtual_path,curve_path,background_path,rug_path
+fig7_a,fig7,full,DT,Li_comp,,5624,37,152,outputs/M3/virtual/fig7_a.parquet,outputs/M3/panels/fig7_a.csv,outputs/M3/backgrounds/full_DT.csv,outputs/M3/backgrounds/full_DT_observed.csv
+fig7_b,fig7,full,DT,Sintering Time,,2736,18,152,outputs/M3/virtual/fig7_b.parquet,outputs/M3/panels/fig7_b.csv,outputs/M3/backgrounds/full_DT.csv,outputs/M3/backgrounds/full_DT_observed.csv
+fig7_c,fig7,full,DT,Zr_site_sto,,2736,18,152,outputs/M3/virtual/fig7_c.parquet,outputs/M3/panels/fig7_c.csv,outputs/M3/backgrounds/full_DT.csv,outputs/M3/backgrounds/full_DT_observed.csv
+fig7_d,fig7,full,DT,1st Calcination Temp,,1064,7,152,outputs/M3/virtual/fig7_d.parquet,outputs/M3/panels/fig7_d.csv,outputs/M3/backgrounds/full_DT.csv,outputs/M3/backgrounds/full_DT_observed.csv
+fig7_e,fig7,full,DT,Zr_site_elnv,,2128,14,152,outputs/M3/virtual/fig7_e.parquet,outputs/M3/panels/fig7_e.csv,outputs/M3/backgrounds/full_DT.csv,outputs/M3/backgrounds/full_DT_observed.csv
+fig7_f,fig7,full,RF,Li_comp,,5624,37,152,outputs/M3/virtual/fig7_f.parquet,outputs/M3/panels/fig7_f.csv,outputs/M3/backgrounds/full_RF.csv,outputs/M3/backgrounds/full_RF_observed.csv
+fig7_g,fig7,full,RF,Sintering Temperature,,2280,15,152,outputs/M3/virtual/fig7_g.parquet,outputs/M3/panels/fig7_g.csv,outputs/M3/backgrounds/full_RF.csv,outputs/M3/backgrounds/full_RF_observed.csv
+fig7_h,fig7,full,RF,Zr_site_sto,,2736,18,152,outputs/M3/virtual/fig7_h.parquet,outputs/M3/panels/fig7_h.csv,outputs/M3/backgrounds/full_RF.csv,outputs/M3/backgrounds/full_RF_observed.csv
+fig7_i,fig7,full,RF,Li_site_sto,,2432,16,152,outputs/M3/virtual/fig7_i.parquet,outputs/M3/panels/fig7_i.csv,outputs/M3/backgrounds/full_RF.csv,outputs/M3/backgrounds/full_RF_observed.csv
+fig7_j,fig7,full,RF,Sintering Time,,2736,18,152,outputs/M3/virtual/fig7_j.parquet,outputs/M3/panels/fig7_j.csv,outputs/M3/backgrounds/full_RF.csv,outputs/M3/backgrounds/full_RF_observed.csv
+fig7_k,fig7,full,LGBM,Li_comp,,5624,37,152,outputs/M3/virtual/fig7_k.parquet,outputs/M3/panels/fig7_k.csv,outputs/M3/backgrounds/full_LGBM.csv,outputs/M3/backgrounds/full_LGBM_observed.csv
+fig7_l,fig7,full,LGBM,Ball milling time,,3952,26,152,outputs/M3/virtual/fig7_l.parquet,outputs/M3/panels/fig7_l.csv,outputs/M3/backgrounds/full_LGBM.csv,outputs/M3/backgrounds/full_LGBM_observed.csv
+fig7_m,fig7,full,LGBM,Sintering Temperature,,2280,15,152,outputs/M3/virtual/fig7_m.parquet,outputs/M3/panels/fig7_m.csv,outputs/M3/backgrounds/full_LGBM.csv,outputs/M3/backgrounds/full_LGBM_observed.csv
+fig7_n,fig7,full,LGBM,Zr_comp,,3192,21,152,outputs/M3/virtual/fig7_n.parquet,outputs/M3/panels/fig7_n.csv,outputs/M3/backgrounds/full_LGBM.csv,outputs/M3/backgrounds/full_LGBM_observed.csv
+fig7_o,fig7,full,LGBM,Sintering Time,,2736,18,152,outputs/M3/virtual/fig7_o.parquet,outputs/M3/panels/fig7_o.csv,outputs/M3/backgrounds/full_LGBM.csv,outputs/M3/backgrounds/full_LGBM_observed.csv
+fig7_p,fig7,full,CB,Li_comp,,5624,37,152,outputs/M3/virtual/fig7_p.parquet,outputs/M3/panels/fig7_p.csv,outputs/M3/backgrounds/full_CB.csv,outputs/M3/backgrounds/full_CB_observed.csv
+fig7_q,fig7,full,CB,Sintering Temperature,,2280,15,152,outputs/M3/virtual/fig7_q.parquet,outputs/M3/panels/fig7_q.csv,outputs/M3/backgrounds/full_CB.csv,outputs/M3/backgrounds/full_CB_observed.csv
+fig7_r,fig7,full,CB,Zr_comp,,3192,21,152,outputs/M3/virtual/fig7_r.parquet,outputs/M3/panels/fig7_r.csv,outputs/M3/backgrounds/full_CB.csv,outputs/M3/backgrounds/full_CB_observed.csv
+fig7_s,fig7,full,CB,Zr_site_elnv,,2128,14,152,outputs/M3/virtual/fig7_s.parquet,outputs/M3/panels/fig7_s.csv,outputs/M3/backgrounds/full_CB.csv,outputs/M3/backgrounds/full_CB_observed.csv
+fig7_t,fig7,full,CB,Li_site_sto,,2432,16,152,outputs/M3/virtual/fig7_t.parquet,outputs/M3/panels/fig7_t.csv,outputs/M3/backgrounds/full_CB.csv,outputs/M3/backgrounds/full_CB_observed.csv
+fig9_a,fig9,full,DT,Li_comp,Sintering Time,101232,666,152,outputs/M3/virtual/fig9_a.parquet,outputs/M3/panels/fig9_a.csv,outputs/M3/backgrounds/full_DT.csv,outputs/M3/backgrounds/full_DT_observed.csv
+fig9_b,fig9,full,DT,Li_comp,1st Calcination Temp,39368,259,152,outputs/M3/virtual/fig9_b.parquet,outputs/M3/panels/fig9_b.csv,outputs/M3/backgrounds/full_DT.csv,outputs/M3/backgrounds/full_DT_observed.csv
+fig9_c,fig9,full,DT,Li_comp,Zr_site_sto,101232,666,152,outputs/M3/virtual/fig9_c.parquet,outputs/M3/panels/fig9_c.csv,outputs/M3/backgrounds/full_DT.csv,outputs/M3/backgrounds/full_DT_observed.csv
+fig9_d,fig9,full,DT,Li_comp,Zr_site_elnv,78736,518,152,outputs/M3/virtual/fig9_d.parquet,outputs/M3/panels/fig9_d.csv,outputs/M3/backgrounds/full_DT.csv,outputs/M3/backgrounds/full_DT_observed.csv
+fig9_e,fig9,full,RF,Li_comp,Sintering Time,101232,666,152,outputs/M3/virtual/fig9_e.parquet,outputs/M3/panels/fig9_e.csv,outputs/M3/backgrounds/full_RF.csv,outputs/M3/backgrounds/full_RF_observed.csv
+fig9_f,fig9,full,RF,Li_comp,Sintering Temperature,84360,555,152,outputs/M3/virtual/fig9_f.parquet,outputs/M3/panels/fig9_f.csv,outputs/M3/backgrounds/full_RF.csv,outputs/M3/backgrounds/full_RF_observed.csv
+fig9_g,fig9,full,RF,Li_comp,Zr_site_sto,101232,666,152,outputs/M3/virtual/fig9_g.parquet,outputs/M3/panels/fig9_g.csv,outputs/M3/backgrounds/full_RF.csv,outputs/M3/backgrounds/full_RF_observed.csv
+fig9_h,fig9,full,RF,Li_comp,Li_site_sto,89984,592,152,outputs/M3/virtual/fig9_h.parquet,outputs/M3/panels/fig9_h.csv,outputs/M3/backgrounds/full_RF.csv,outputs/M3/backgrounds/full_RF_observed.csv
+fig9_i,fig9,full,LGBM,Li_comp,Sintering Time,101232,666,152,outputs/M3/virtual/fig9_i.parquet,outputs/M3/panels/fig9_i.csv,outputs/M3/backgrounds/full_LGBM.csv,outputs/M3/backgrounds/full_LGBM_observed.csv
+fig9_j,fig9,full,LGBM,Li_comp,Sintering Temperature,84360,555,152,outputs/M3/virtual/fig9_j.parquet,outputs/M3/panels/fig9_j.csv,outputs/M3/backgrounds/full_LGBM.csv,outputs/M3/backgrounds/full_LGBM_observed.csv
+fig9_k,fig9,full,LGBM,Li_comp,Zr_comp,118104,777,152,outputs/M3/virtual/fig9_k.parquet,outputs/M3/panels/fig9_k.csv,outputs/M3/backgrounds/full_LGBM.csv,outputs/M3/backgrounds/full_LGBM_observed.csv
+fig9_l,fig9,full,LGBM,Li_comp,Ball milling time,146224,962,152,outputs/M3/virtual/fig9_l.parquet,outputs/M3/panels/fig9_l.csv,outputs/M3/backgrounds/full_LGBM.csv,outputs/M3/backgrounds/full_LGBM_observed.csv
+fig9_m,fig9,full,CB,Li_comp,Zr_site_elnv,78736,518,152,outputs/M3/virtual/fig9_m.parquet,outputs/M3/panels/fig9_m.csv,outputs/M3/backgrounds/full_CB.csv,outputs/M3/backgrounds/full_CB_observed.csv
+fig9_n,fig9,full,CB,Li_comp,Sintering Temperature,84360,555,152,outputs/M3/virtual/fig9_n.parquet,outputs/M3/panels/fig9_n.csv,outputs/M3/backgrounds/full_CB.csv,outputs/M3/backgrounds/full_CB_observed.csv
+fig9_o,fig9,full,CB,Li_comp,Zr_comp,118104,777,152,outputs/M3/virtual/fig9_o.parquet,outputs/M3/panels/fig9_o.csv,outputs/M3/backgrounds/full_CB.csv,outputs/M3/backgrounds/full_CB_observed.csv
+fig9_p,fig9,full,CB,Li_comp,Li_site_sto,89984,592,152,outputs/M3/virtual/fig9_p.parquet,outputs/M3/panels/fig9_p.csv,outputs/M3/backgrounds/full_CB.csv,outputs/M3/backgrounds/full_CB_observed.csv
+fig12_a,fig12,ga,CB,Li_comp,,840,14,60,outputs/M3/virtual/fig12_a.parquet,outputs/M3/panels/fig12_a.csv,outputs/M3/backgrounds/ga_CB.csv,outputs/M3/backgrounds/ga_CB_observed.csv
+fig12_b,fig12,ga,CB,1st Calcination Temp,,300,5,60,outputs/M3/virtual/fig12_b.parquet,outputs/M3/panels/fig12_b.csv,outputs/M3/backgrounds/ga_CB.csv,outputs/M3/backgrounds/ga_CB_observed.csv
+fig12_c,fig12,ga,CB,%excess Li,,360,6,60,outputs/M3/virtual/fig12_c.parquet,outputs/M3/panels/fig12_c.csv,outputs/M3/backgrounds/ga_CB.csv,outputs/M3/backgrounds/ga_CB_observed.csv
+fig12_d,fig12,ga,CB,Sintering Time,,660,11,60,outputs/M3/virtual/fig12_d.parquet,outputs/M3/panels/fig12_d.csv,outputs/M3/backgrounds/ga_CB.csv,outputs/M3/backgrounds/ga_CB_observed.csv
+fig12_e,fig12,ga,CB,Li_site_sto,,720,12,60,outputs/M3/virtual/fig12_e.parquet,outputs/M3/panels/fig12_e.csv,outputs/M3/backgrounds/ga_CB.csv,outputs/M3/backgrounds/ga_CB_observed.csv
+fig12_f,fig12,ga,AB,Li_comp,,840,14,60,outputs/M3/virtual/fig12_f.parquet,outputs/M3/panels/fig12_f.csv,outputs/M3/backgrounds/ga_AB.csv,outputs/M3/backgrounds/ga_AB_observed.csv
+fig12_g,fig12,ga,AB,Li_site_elnv,,300,5,60,outputs/M3/virtual/fig12_g.parquet,outputs/M3/panels/fig12_g.csv,outputs/M3/backgrounds/ga_AB.csv,outputs/M3/backgrounds/ga_AB_observed.csv
+fig12_h,fig12,ga,AB,Ball milling time,,600,10,60,outputs/M3/virtual/fig12_h.parquet,outputs/M3/panels/fig12_h.csv,outputs/M3/backgrounds/ga_AB.csv,outputs/M3/backgrounds/ga_AB_observed.csv
+fig12_i,fig12,ga,AB,Li_site_sto,,720,12,60,outputs/M3/virtual/fig12_i.parquet,outputs/M3/panels/fig12_i.csv,outputs/M3/backgrounds/ga_AB.csv,outputs/M3/backgrounds/ga_AB_observed.csv
+fig12_j,fig12,ga,AB,1st Calcination Temp,,300,5,60,outputs/M3/virtual/fig12_j.parquet,outputs/M3/panels/fig12_j.csv,outputs/M3/backgrounds/ga_AB.csv,outputs/M3/backgrounds/ga_AB_observed.csv
+own_DT_1,own_top5,full,DT,Li_comp,,5624,37,152,outputs/M3/virtual/own_DT_1.parquet,outputs/M3/panels/own_DT_1.csv,outputs/M3/backgrounds/full_DT.csv,outputs/M3/backgrounds/full_DT_observed.csv
+own_DT_2,own_top5,full,DT,1st Calcination Temp,,1064,7,152,outputs/M3/virtual/own_DT_2.parquet,outputs/M3/panels/own_DT_2.csv,outputs/M3/backgrounds/full_DT.csv,outputs/M3/backgrounds/full_DT_observed.csv
+own_DT_3,own_top5,full,DT,Sintering Time,,2736,18,152,outputs/M3/virtual/own_DT_3.parquet,outputs/M3/panels/own_DT_3.csv,outputs/M3/backgrounds/full_DT.csv,outputs/M3/backgrounds/full_DT_observed.csv
+own_DT_4,own_top5,full,DT,Li Precursor_Li2CO3,,304,2,152,outputs/M3/virtual/own_DT_4.parquet,outputs/M3/panels/own_DT_4.csv,outputs/M3/backgrounds/full_DT.csv,outputs/M3/backgrounds/full_DT_observed.csv
+own_DT_5,own_top5,full,DT,Zr_site_sto,,2736,18,152,outputs/M3/virtual/own_DT_5.parquet,outputs/M3/panels/own_DT_5.csv,outputs/M3/backgrounds/full_DT.csv,outputs/M3/backgrounds/full_DT_observed.csv
+own_RF_1,own_top5,full,RF,Li_comp,,5624,37,152,outputs/M3/virtual/own_RF_1.parquet,outputs/M3/panels/own_RF_1.csv,outputs/M3/backgrounds/full_RF.csv,outputs/M3/backgrounds/full_RF_observed.csv
+own_RF_2,own_top5,full,RF,Sintering Temperature,,2280,15,152,outputs/M3/virtual/own_RF_2.parquet,outputs/M3/panels/own_RF_2.csv,outputs/M3/backgrounds/full_RF.csv,outputs/M3/backgrounds/full_RF_observed.csv
+own_RF_3,own_top5,full,RF,Sintering Time,,2736,18,152,outputs/M3/virtual/own_RF_3.parquet,outputs/M3/panels/own_RF_3.csv,outputs/M3/backgrounds/full_RF.csv,outputs/M3/backgrounds/full_RF_observed.csv
+own_RF_4,own_top5,full,RF,Zr_site_sto,,2736,18,152,outputs/M3/virtual/own_RF_4.parquet,outputs/M3/panels/own_RF_4.csv,outputs/M3/backgrounds/full_RF.csv,outputs/M3/backgrounds/full_RF_observed.csv
+own_RF_5,own_top5,full,RF,Li_site_sto,,2432,16,152,outputs/M3/virtual/own_RF_5.parquet,outputs/M3/panels/own_RF_5.csv,outputs/M3/backgrounds/full_RF.csv,outputs/M3/backgrounds/full_RF_observed.csv
+own_LGBM_1,own_top5,full,LGBM,Li_comp,,5624,37,152,outputs/M3/virtual/own_LGBM_1.parquet,outputs/M3/panels/own_LGBM_1.csv,outputs/M3/backgrounds/full_LGBM.csv,outputs/M3/backgrounds/full_LGBM_observed.csv
+own_LGBM_2,own_top5,full,LGBM,Sintering Temperature,,2280,15,152,outputs/M3/virtual/own_LGBM_2.parquet,outputs/M3/panels/own_LGBM_2.csv,outputs/M3/backgrounds/full_LGBM.csv,outputs/M3/backgrounds/full_LGBM_observed.csv
+own_LGBM_3,own_top5,full,LGBM,1st Calcination Temp,,1064,7,152,outputs/M3/virtual/own_LGBM_3.parquet,outputs/M3/panels/own_LGBM_3.csv,outputs/M3/backgrounds/full_LGBM.csv,outputs/M3/backgrounds/full_LGBM_observed.csv
+own_LGBM_4,own_top5,full,LGBM,%excess Li,,1824,12,152,outputs/M3/virtual/own_LGBM_4.parquet,outputs/M3/panels/own_LGBM_4.csv,outputs/M3/backgrounds/full_LGBM.csv,outputs/M3/backgrounds/full_LGBM_observed.csv
+own_LGBM_5,own_top5,full,LGBM,Li_site_sto,,2432,16,152,outputs/M3/virtual/own_LGBM_5.parquet,outputs/M3/panels/own_LGBM_5.csv,outputs/M3/backgrounds/full_LGBM.csv,outputs/M3/backgrounds/full_LGBM_observed.csv
+own_CB_1,own_top5,full,CB,Li_comp,,5624,37,152,outputs/M3/virtual/own_CB_1.parquet,outputs/M3/panels/own_CB_1.csv,outputs/M3/backgrounds/full_CB.csv,outputs/M3/backgrounds/full_CB_observed.csv
+own_CB_2,own_top5,full,CB,Sintering Temperature,,2280,15,152,outputs/M3/virtual/own_CB_2.parquet,outputs/M3/panels/own_CB_2.csv,outputs/M3/backgrounds/full_CB.csv,outputs/M3/backgrounds/full_CB_observed.csv
+own_CB_3,own_top5,full,CB,Sintering Time,,2736,18,152,outputs/M3/virtual/own_CB_3.parquet,outputs/M3/panels/own_CB_3.csv,outputs/M3/backgrounds/full_CB.csv,outputs/M3/backgrounds/full_CB_observed.csv
+own_CB_4,own_top5,full,CB,%excess Li,,1824,12,152,outputs/M3/virtual/own_CB_4.parquet,outputs/M3/panels/own_CB_4.csv,outputs/M3/backgrounds/full_CB.csv,outputs/M3/backgrounds/full_CB_observed.csv
+own_CB_5,own_top5,full,CB,Li_site_sto,,2432,16,152,outputs/M3/virtual/own_CB_5.parquet,outputs/M3/panels/own_CB_5.csv,outputs/M3/backgrounds/full_CB.csv,outputs/M3/backgrounds/full_CB_observed.csv

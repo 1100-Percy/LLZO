@@ -1,0 +1,15 @@
+{
+  "seed": 0,
+  "data_version": "V_raw",
+  "script": "scripts/run_m3.py",
+  "imputation": "A0",
+  "threshold": "T_main",
+  "background": "B_train",
+  "grid": "G1",
+  "git_hash": "bafea03981e7ea072585cf8040c3fb6e2226a9dd",
+  "git_dirty": true,
+  "protocol_version": 1,
+  "protocol_sha256": "ac99cfc50a87bf818b33923af5510198f09ff437a8c8e1ad5cede337b9fc158f",
+  "timestamp": "2026-09-30T09:26:55.432073+00:00",
+  "sha256": "afba3933744c4f738369870146e718b07685fd9f1f66d4f1483da16e6da20d87"
+}

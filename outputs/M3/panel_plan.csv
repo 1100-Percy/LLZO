@@ -1,0 +1,67 @@
+panel_id,figure,cohort,model,feature,feature_2
+fig7_a,fig7,full,DT,Li_comp,
+fig7_b,fig7,full,DT,Sintering Time,
+fig7_c,fig7,full,DT,Zr_site_sto,
+fig7_d,fig7,full,DT,1st Calcination Temp,
+fig7_e,fig7,full,DT,Zr_site_elnv,
+fig7_f,fig7,full,RF,Li_comp,
+fig7_g,fig7,full,RF,Sintering Temperature,
+fig7_h,fig7,full,RF,Zr_site_sto,
+fig7_i,fig7,full,RF,Li_site_sto,
+fig7_j,fig7,full,RF,Sintering Time,
+fig7_k,fig7,full,LGBM,Li_comp,
+fig7_l,fig7,full,LGBM,Ball milling time,
+fig7_m,fig7,full,LGBM,Sintering Temperature,
+fig7_n,fig7,full,LGBM,Zr_comp,
+fig7_o,fig7,full,LGBM,Sintering Time,
+fig7_p,fig7,full,CB,Li_comp,
+fig7_q,fig7,full,CB,Sintering Temperature,
+fig7_r,fig7,full,CB,Zr_comp,
+fig7_s,fig7,full,CB,Zr_site_elnv,
+fig7_t,fig7,full,CB,Li_site_sto,
+fig9_a,fig9,full,DT,Li_comp,Sintering Time
+fig9_b,fig9,full,DT,Li_comp,1st Calcination Temp
+fig9_c,fig9,full,DT,Li_comp,Zr_site_sto
+fig9_d,fig9,full,DT,Li_comp,Zr_site_elnv
+fig9_e,fig9,full,RF,Li_comp,Sintering Time
+fig9_f,fig9,full,RF,Li_comp,Sintering Temperature
+fig9_g,fig9,full,RF,Li_comp,Zr_site_sto
+fig9_h,fig9,full,RF,Li_comp,Li_site_sto
+fig9_i,fig9,full,LGBM,Li_comp,Sintering Time
+fig9_j,fig9,full,LGBM,Li_comp,Sintering Temperature
+fig9_k,fig9,full,LGBM,Li_comp,Zr_comp
+fig9_l,fig9,full,LGBM,Li_comp,Ball milling time
+fig9_m,fig9,full,CB,Li_comp,Zr_site_elnv
+fig9_n,fig9,full,CB,Li_comp,Sintering Temperature
+fig9_o,fig9,full,CB,Li_comp,Zr_comp
+fig9_p,fig9,full,CB,Li_comp,Li_site_sto
+fig12_a,fig12,ga,CB,Li_comp,
+fig12_b,fig12,ga,CB,1st Calcination Temp,
+fig12_c,fig12,ga,CB,%excess Li,
+fig12_d,fig12,ga,CB,Sintering Time,
+fig12_e,fig12,ga,CB,Li_site_sto,
+fig12_f,fig12,ga,AB,Li_comp,
+fig12_g,fig12,ga,AB,Li_site_elnv,
+fig12_h,fig12,ga,AB,Ball milling time,
+fig12_i,fig12,ga,AB,Li_site_sto,
+fig12_j,fig12,ga,AB,1st Calcination Temp,
+own_DT_1,own_top5,full,DT,Li_comp,
+own_DT_2,own_top5,full,DT,1st Calcination Temp,
+own_DT_3,own_top5,full,DT,Sintering Time,
+own_DT_4,own_top5,full,DT,Li Precursor_Li2CO3,
+own_DT_5,own_top5,full,DT,Zr_site_sto,
+own_RF_1,own_top5,full,RF,Li_comp,
+own_RF_2,own_top5,full,RF,Sintering Temperature,
+own_RF_3,own_top5,full,RF,Sintering Time,
+own_RF_4,own_top5,full,RF,Zr_site_sto,
+own_RF_5,own_top5,full,RF,Li_site_sto,
+own_LGBM_1,own_top5,full,LGBM,Li_comp,
+own_LGBM_2,own_top5,full,LGBM,Sintering Temperature,
+own_LGBM_3,own_top5,full,LGBM,1st Calcination Temp,
+own_LGBM_4,own_top5,full,LGBM,%excess Li,
+own_LGBM_5,own_top5,full,LGBM,Li_site_sto,
+own_CB_1,own_top5,full,CB,Li_comp,
+own_CB_2,own_top5,full,CB,Sintering Temperature,
+own_CB_3,own_top5,full,CB,Sintering Time,
+own_CB_4,own_top5,full,CB,%excess Li,
+own_CB_5,own_top5,full,CB,Li_site_sto,
