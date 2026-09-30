@@ -32,4 +32,5 @@
 ## 本次会话摘要（人类反馈）
 - 安装 lightgbm、catboost 及必要运行依赖，合成数据训练与完整测试通过；新增 scripts/check_model_dependencies.py 可重跑验收。
 - 更新反馈处理记录、决策、环境产物、checkpoint 与 claims；保留 M0/M1 的历史检查记录，不改原始数据或冻结协议。
-- 正在提交并推送至 GitHub main，待远端核验后回填完成状态；本会话不开始 M2。
+- 处理提交 `767cff3d9657c13cdd8ae10e7aa2fb65c1f34514` 已连同此前 M0/M1 提交推送至 GitHub main，远端 SHA 核验一致；HUMAN_FEEDBACK.md 已标记 [done]。此后的状态回填亦提交并推送。
+- M2 保持 TODO；本会话到反馈处理完成为止。
