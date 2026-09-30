@@ -1,0 +1,17 @@
+params,mean_test_score,std_test_score,rank_test_score,mean_fit_time
+"{""learning_rate"": 0.03, ""min_child_samples"": 5, ""n_estimators"": 200, ""num_leaves"": 7}",0.804585682987623,0.06258818023033559,10,0.010344362258911133
+"{""learning_rate"": 0.03, ""min_child_samples"": 5, ""n_estimators"": 200, ""num_leaves"": 15}",0.7958410468416814,0.075407199474548,15,0.01748480796813965
+"{""learning_rate"": 0.03, ""min_child_samples"": 5, ""n_estimators"": 500, ""num_leaves"": 7}",0.8230814171084522,0.06135181652322309,3,0.02311091423034668
+"{""learning_rate"": 0.03, ""min_child_samples"": 5, ""n_estimators"": 500, ""num_leaves"": 15}",0.8047530367492897,0.05430704821862722,9,0.040732192993164065
+"{""learning_rate"": 0.03, ""min_child_samples"": 10, ""n_estimators"": 200, ""num_leaves"": 7}",0.8001940911477619,0.05806388001561658,14,0.009667253494262696
+"{""learning_rate"": 0.03, ""min_child_samples"": 10, ""n_estimators"": 200, ""num_leaves"": 15}",0.8236369333691052,0.06617363843341838,2,0.014196300506591797
+"{""learning_rate"": 0.03, ""min_child_samples"": 10, ""n_estimators"": 500, ""num_leaves"": 7}",0.8144880473830016,0.07757177816433325,4,0.021914148330688478
+"{""learning_rate"": 0.03, ""min_child_samples"": 10, ""n_estimators"": 500, ""num_leaves"": 15}",0.8098732990912927,0.08377486347350951,7,0.03378205299377442
+"{""learning_rate"": 0.1, ""min_child_samples"": 5, ""n_estimators"": 200, ""num_leaves"": 7}",0.8141953549242041,0.060596164241891855,5,0.010170698165893555
+"{""learning_rate"": 0.1, ""min_child_samples"": 5, ""n_estimators"": 200, ""num_leaves"": 15}",0.7917000770880579,0.06177909709498192,16,0.016817617416381835
+"{""learning_rate"": 0.1, ""min_child_samples"": 5, ""n_estimators"": 500, ""num_leaves"": 7}",0.8002645125957555,0.06831984532144929,13,0.02283310890197754
+"{""learning_rate"": 0.1, ""min_child_samples"": 5, ""n_estimators"": 500, ""num_leaves"": 15}",0.8054290249585879,0.06053411420829483,8,0.02657208442687988
+"{""learning_rate"": 0.1, ""min_child_samples"": 10, ""n_estimators"": 200, ""num_leaves"": 7}",0.8331952192204903,0.06373936486210091,1,0.00981903076171875
+"{""learning_rate"": 0.1, ""min_child_samples"": 10, ""n_estimators"": 200, ""num_leaves"": 15}",0.8099297643651493,0.08381097847160635,6,0.014450883865356446
+"{""learning_rate"": 0.1, ""min_child_samples"": 10, ""n_estimators"": 500, ""num_leaves"": 7}",0.8007967706717366,0.05957419816594291,11,0.021489429473876952
+"{""learning_rate"": 0.1, ""min_child_samples"": 10, ""n_estimators"": 500, ""num_leaves"": 15}",0.8002691222304279,0.07032154145215665,12,0.028696060180664062

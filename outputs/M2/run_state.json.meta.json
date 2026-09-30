@@ -1,0 +1,18 @@
+{
+  "seed": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "data_version": "V_raw+V_corr",
+  "script": "scripts/run_m2.py",
+  "run_context": {},
+  "git_hash": "1f9ee8d2b989f98219a876d57414fff24c7f7428",
+  "git_dirty": true,
+  "protocol_version": 1,
+  "protocol_sha256": "ac99cfc50a87bf818b33923af5510198f09ff437a8c8e1ad5cede337b9fc158f",
+  "timestamp": "2026-09-30T04:42:27.070539+00:00",
+  "sha256": "ffdb2678cb6ab251f84a138bbf75f8cdf7e40296f9c1ca78f66922c042179747"
+}

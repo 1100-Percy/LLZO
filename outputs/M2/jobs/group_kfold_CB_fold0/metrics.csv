@@ -1,0 +1,2 @@
+job_id,cohort,model,data_version,imputation,threshold_name,threshold,seed,method,fold,split,n,true_0,true_1,accuracy,f1_weighted,roc_auc,auc_reason,tn,fp,fn,tp,reload_verified,best_cv_f1,best_params,elapsed_seconds
+group_kfold_CB_fold0,full,CB,V_raw,A0,T_main,0.000269,0,group_kfold,0,test,44,24,20,0.5909090909090909,0.5883681535855448,0.6437499999999999,,12,12,6,14,True,0.8094023545424225,"{""depth"": 6, ""iterations"": 600, ""learning_rate"": 0.03}",5.777019083000027

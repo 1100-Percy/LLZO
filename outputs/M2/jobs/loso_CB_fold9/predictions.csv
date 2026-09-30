@@ -1,0 +1,8 @@
+job_id,cohort,model,data_version,imputation,threshold_name,threshold,seed,method,fold,split,record_id,source_id,y_true,y_pred,p_high
+loso_CB_fold9,full,CB,V_raw,A0,T_main,0.000269,0,loso,9,test,23,11,0,0,0.07419125797716111
+loso_CB_fold9,full,CB,V_raw,A0,T_main,0.000269,0,loso,9,test,24,11,0,0,0.09058009844863858
+loso_CB_fold9,full,CB,V_raw,A0,T_main,0.000269,0,loso,9,test,25,11,1,1,0.6991289458059019
+loso_CB_fold9,full,CB,V_raw,A0,T_main,0.000269,0,loso,9,test,26,11,1,0,0.35522599828563256
+loso_CB_fold9,full,CB,V_raw,A0,T_main,0.000269,0,loso,9,test,27,11,1,0,0.23915974100420026
+loso_CB_fold9,full,CB,V_raw,A0,T_main,0.000269,0,loso,9,test,28,11,1,0,0.21878996391536762
+loso_CB_fold9,full,CB,V_raw,A0,T_main,0.000269,0,loso,9,test,29,11,1,0,0.21878996391536762

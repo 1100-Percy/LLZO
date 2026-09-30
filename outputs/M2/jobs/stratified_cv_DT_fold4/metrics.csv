@@ -1,0 +1,2 @@
+job_id,cohort,model,data_version,imputation,threshold_name,threshold,seed,method,fold,split,n,true_0,true_1,accuracy,f1_weighted,roc_auc,auc_reason,tn,fp,fn,tp,reload_verified,best_cv_f1,best_params,elapsed_seconds
+stratified_cv_DT_fold4,full,DT,V_raw,A0,T_main,0.000269,0,stratified_cv,4,test,43,21,22,0.8372093023255814,0.8361435694439158,0.8354978354978355,,16,5,2,20,True,0.7518479249923924,"{""max_depth"": null, ""min_samples_leaf"": 1}",0.22506983300002048

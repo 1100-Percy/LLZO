@@ -1,0 +1,17 @@
+{
+  "seed": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "data_version": "V_raw+V_corr",
+  "script": "scripts/finalize_m2.py",
+  "git_hash": "1f9ee8d2b989f98219a876d57414fff24c7f7428",
+  "git_dirty": true,
+  "protocol_version": 1,
+  "protocol_sha256": "ac99cfc50a87bf818b33923af5510198f09ff437a8c8e1ad5cede337b9fc158f",
+  "timestamp": "2026-09-30T06:21:22.919999+00:00",
+  "sha256": "6c59f6cb023cba74d2fba85b758315a2f3cd5f356495f3af011bcee83bc59225"
+}

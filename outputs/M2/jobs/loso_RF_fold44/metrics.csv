@@ -1,0 +1,2 @@
+job_id,cohort,model,data_version,imputation,threshold_name,threshold,seed,method,fold,split,n,true_0,true_1,accuracy,f1_weighted,roc_auc,auc_reason,tn,fp,fn,tp,reload_verified,best_cv_f1,best_params,elapsed_seconds
+loso_RF_fold44,full,RF,V_raw,A0,T_main,0.000269,0,loso,44,test,4,3,1,0.5,0.5,0.6666666666666667,,1,2,0,1,True,0.834934092734442,"{""max_depth"": 10, ""max_features"": ""sqrt"", ""min_samples_leaf"": 1, ""n_estimators"": 300}",11.026825207999991

@@ -1,0 +1,65 @@
+feature,importance,rank,paper_rank,own_top15,paper_top5,model
+Li_comp,0.157280838679523,1,1.0,True,True,DT
+1st Calcination Temp,0.1440254889661857,2,4.0,True,True,DT
+Sintering Time,0.1037695781230263,3,2.0,True,True,DT
+Li Precursor_Li2CO3,0.1021208284187885,4,,True,False,DT
+Zr_site_sto,0.0971903607678491,5,3.0,True,True,DT
+Zr_site_irad,0.0870107902856801,6,,True,False,DT
+%excess Li,0.0712721827861579,7,,True,False,DT
+Li_site_sto,0.0700255102040816,8,,True,False,DT
+Sintering Temperature,0.066156462585034,9,,True,False,DT
+Li_site_elnv,0.0357142857142857,10,,True,False,DT
+Ball milling time,0.0321428571428571,11,,True,False,DT
+Zr_comp,0.0154336734693877,12,,True,False,DT
+# of Dopants,0.0142857142857142,13,,True,False,DT
+Li_dop_Ga,0.0035714285714285,14,,True,False,DT
+La_comp,0.0,15,,True,False,DT
+Zr_site_elnv,0.0,21,5.0,False,True,DT
+Li_comp,0.1114427396906741,1,1.0,True,True,RF
+Sintering Temperature,0.0781519740340478,2,2.0,True,True,RF
+Sintering Time,0.0605588873709247,3,5.0,True,True,RF
+Zr_site_sto,0.0598900864460468,4,3.0,True,True,RF
+Li_site_sto,0.0578429938057965,5,4.0,True,True,RF
+1st Calcination Temp,0.056867686219358,6,,True,False,RF
+%excess Li,0.0563814848122341,7,,True,False,RF
+Zr_comp,0.047592508744421,8,,True,False,RF
+Ball milling time,0.0437472570293726,9,,True,False,RF
+La_comp,0.0327054255871805,10,,True,False,RF
+La_site_sto,0.0293026202483828,11,,True,False,RF
+Measurement Temperature,0.0289224569489748,12,,True,False,RF
+# of Dopants,0.025909752437194,13,,True,False,RF
+1st Calcination Time,0.025893985538047,14,,True,False,RF
+Zr_site_A,0.0241316249070982,15,,True,False,RF
+Li_comp,169.0,1,1.0,True,True,LGBM
+Sintering Temperature,144.0,2,3.0,True,True,LGBM
+1st Calcination Temp,78.0,3,,True,False,LGBM
+%excess Li,74.0,4,,True,False,LGBM
+Li_site_sto,72.0,5,,True,False,LGBM
+Zr_site_irad,71.0,6,,True,False,LGBM
+Zr_site_sto,56.0,7,,True,False,LGBM
+La_comp,55.0,8,,True,False,LGBM
+# of Dopants,52.0,9,,True,False,LGBM
+Sintering Time,51.0,10,5.0,True,True,LGBM
+Measurement Temperature,50.0,11,,True,False,LGBM
+Li Precursor_Li2CO3,50.0,12,,True,False,LGBM
+# of calcinations,44.0,13,,True,False,LGBM
+La_site_A,44.0,14,,True,False,LGBM
+1st Calcination Time,42.0,15,,True,False,LGBM
+Zr_comp,32.0,16,4.0,False,True,LGBM
+Ball milling time,23.0,18,2.0,False,True,LGBM
+Li_comp,19.211203542542716,1,1.0,True,True,CB
+Sintering Temperature,15.222029692000074,2,2.0,True,True,CB
+Sintering Time,6.862774614383242,3,,True,False,CB
+%excess Li,4.952228544661814,4,,True,False,CB
+Li_site_sto,4.9354437112246945,5,5.0,True,True,CB
+Zr_site_sto,4.439426651477596,6,,True,False,CB
+Zr_comp,4.093172079564863,7,3.0,True,True,CB
+Ball milling time,4.028590879407274,8,,True,False,CB
+Zr_site_irad,3.955002775189759,9,,True,False,CB
+Measurement Temperature,3.687071646126232,10,,True,False,CB
+1st Calcination Time,3.318711138844394,11,,True,False,CB
+Li Precursor_Li2CO3,3.235467530533071,12,,True,False,CB
+Zr_site_A,2.7058312117614993,13,,True,False,CB
+# of calcinations,2.3527394499493455,14,,True,False,CB
+# of Dopants,2.274508300514408,15,,True,False,CB
+Zr_site_elnv,1.681400345769397,19,4.0,False,True,CB

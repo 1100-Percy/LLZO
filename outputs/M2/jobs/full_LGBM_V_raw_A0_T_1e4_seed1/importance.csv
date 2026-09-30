@@ -1,0 +1,60 @@
+feature,importance,rank
+Li_comp,173,1
+Sintering Time,168,2
+Sintering Temperature,140,3
+Ball milling time,111,4
+1st Calcination Temp,108,5
+%excess Li,81,6
+# of Dopants,70,7
+Li_site_sto,52,8
+Li Precursor_Li2CO3,48,9
+Measurement Temperature,42,10
+Zr_comp,37,11
+Zr_site_sto,33,12
+1st Calcination Time,32,13
+Li_site_elnv,24,14
+Zr_site_A,21,15
+Zr_dop_0,14,16
+La_comp,12,17
+Zr_site_irad,7,18
+# of calcinations,6,19
+# of ball milling,5,20
+Zr_site_elnv,5,21
+La_site_sto,3,22
+Li_dop_0,3,23
+Li Precursor_LiOH.H2O,2,24
+La Precursor_La2O3,2,25
+La Precursor_La(OH)3,1,26
+La_site_A,0,27
+Li Precursor_LiNO3,0,28
+Li Precursor_LiO2,0,29
+Li Precursor_LiOH,0,30
+Li Precursor_missing,0,31
+La Precursor_missing,0,32
+Li_dop_Al,0,33
+Li_dop_Al/Ga,0,34
+Li_dop_Fe,0,35
+Li_dop_Ga,0,36
+Li_dop_Zn,0,37
+Li_dop_missing,0,38
+La_dop_0,0,39
+La_dop_Ba,0,40
+La_dop_Sr,0,41
+La_dop_Y,0,42
+La_dop_missing,0,43
+Zr_dop_2,0,44
+Zr_dop_Gd,0,45
+Zr_dop_Mg,0,46
+Zr_dop_Nb,0,47
+Zr_dop_Nb/Gd,0,48
+Zr_dop_Nb/Y,0,49
+Zr_dop_Sb,0,50
+Zr_dop_Sc,0,51
+Zr_dop_Sm,0,52
+Zr_dop_Ta,0,53
+Zr_dop_Ta/Nb/Y,0,54
+Zr_dop_Te,0,55
+Zr_dop_Ti,0,56
+Zr_dop_W,0,57
+Zr_dop_Y,0,58
+Zr_dop_missing,0,59

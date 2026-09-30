@@ -1,0 +1,3 @@
+job_id,cohort,model,data_version,imputation,threshold_name,threshold,seed,method,fold,split,n,true_0,true_1,accuracy,f1_weighted,roc_auc,auc_reason,tn,fp,fn,tp,reload_verified,best_cv_f1,best_params,elapsed_seconds
+ga_CB_V_raw_A0_T_main_seed4,ga,CB,V_raw,A0,T_main,0.000269,4,holdout,-1,val,13,6,7,0.7692307692307693,0.7511312217194571,0.8809523809523808,,3,3,0,7,True,0.7441938616938617,"{""depth"": 4, ""iterations"": 600, ""learning_rate"": 0.03}",8.667302749999976
+ga_CB_V_raw_A0_T_main_seed4,ga,CB,V_raw,A0,T_main,0.000269,4,holdout,-1,test,13,5,8,0.8461538461538461,0.8354700854700854,0.925,,3,2,0,8,True,0.7441938616938617,"{""depth"": 4, ""iterations"": 600, ""learning_rate"": 0.03}",8.682445791999953

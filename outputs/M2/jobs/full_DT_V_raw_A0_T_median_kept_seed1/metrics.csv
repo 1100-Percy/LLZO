@@ -1,0 +1,3 @@
+job_id,cohort,model,data_version,imputation,threshold_name,threshold,seed,method,fold,split,n,true_0,true_1,accuracy,f1_weighted,roc_auc,auc_reason,tn,fp,fn,tp,reload_verified,best_cv_f1,best_params,elapsed_seconds
+full_DT_V_raw_A0_T_median_kept_seed1,full,DT,V_raw,A0,T_median_kept,0.00026900000000000003,1,holdout,-1,val,33,17,16,0.7272727272727273,0.7221892739134119,0.7316176470588236,,10,7,2,14,True,0.7154799608993156,"{""max_depth"": null, ""min_samples_leaf"": 1}",0.22340187500000752
+full_DT_V_raw_A0_T_median_kept_seed1,full,DT,V_raw,A0,T_median_kept,0.00026900000000000003,1,holdout,-1,test,33,16,17,0.9090909090909091,0.908074218419046,0.90625,,13,3,0,17,True,0.7154799608993156,"{""max_depth"": null, ""min_samples_leaf"": 1}",0.23703112500000145

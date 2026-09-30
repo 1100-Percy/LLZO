@@ -1,0 +1,2 @@
+job_id,cohort,model,data_version,imputation,threshold_name,threshold,seed,method,fold,split,n,true_0,true_1,accuracy,f1_weighted,roc_auc,auc_reason,tn,fp,fn,tp,reload_verified,best_cv_f1,best_params,elapsed_seconds
+stratified_cv_LGBM_fold3,full,LGBM,V_raw,A0,T_main,0.000269,0,stratified_cv,3,test,43,22,21,0.7441860465116279,0.7441860465116279,0.8528138528138528,,16,6,5,16,True,0.7883180155548577,"{""learning_rate"": 0.03, ""min_child_samples"": 10, ""n_estimators"": 500, ""num_leaves"": 7}",1.7280975830000216

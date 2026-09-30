@@ -1,0 +1,2 @@
+job_id,cohort,model,data_version,imputation,threshold_name,threshold,seed,method,fold,split,record_id,source_id,y_true,y_pred,p_high
+loso_CB_fold5,full,CB,V_raw,A0,T_main,0.000269,0,loso,5,test,19,7,0,1,0.6673613977720242

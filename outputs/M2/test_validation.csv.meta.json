@@ -9,10 +9,10 @@
   "data_version": "V_raw+V_corr",
   "script": "scripts/run_m2.py",
   "run_context": {},
-  "git_hash": "73f373f781b07fd13958a908f94b1c7b412e1034",
+  "git_hash": "1f9ee8d2b989f98219a876d57414fff24c7f7428",
   "git_dirty": true,
   "protocol_version": 1,
   "protocol_sha256": "ac99cfc50a87bf818b33923af5510198f09ff437a8c8e1ad5cede337b9fc158f",
-  "timestamp": "2026-09-30T04:05:35.071534+00:00",
+  "timestamp": "2026-09-30T06:20:06.721707+00:00",
   "sha256": "3f2a801cabcc7ce0e5750694a41221655a44787ee272785ff9d9822c7e54b9e5"
 }

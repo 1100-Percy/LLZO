@@ -1,0 +1,60 @@
+feature,importance,rank
+Li_comp,0.2532644683776784,1
+%excess Li,0.12662508953697799,2
+Sintering Time,0.10647453087392834,3
+1st Calcination Temp,0.09593479422697523,4
+Ball milling time,0.08963571224755082,5
+Zr_site_sto,0.07385944980621513,6
+Li Precursor_Li2CO3,0.042914141574898375,7
+Sintering Temperature,0.04144101040204525,8
+Zr_site_irad,0.03711812742598073,9
+Li_dop_Al,0.019350229269691783,10
+La_site_sto,0.016859215679247,11
+1st Calcination Time,0.016486477917631026,12
+Zr_site_elnv,0.015468941452488559,13
+La_comp,0.015017682612242086,14
+Zr_dop_0,0.014987707197846385,15
+Li_dop_0,0.014837830125867922,16
+Zr_site_A,0.010821893197214202,17
+Measurement Temperature,0.008902698075520752,18
+Zr_comp,0.0,19
+Li_site_sto,0.0,20
+# of Dopants,0.0,21
+# of calcinations,0.0,22
+# of ball milling,0.0,23
+Li_site_elnv,0.0,24
+La_site_A,0.0,25
+Li Precursor_LiNO3,0.0,26
+Li Precursor_LiO2,0.0,27
+Li Precursor_LiOH,0.0,28
+Li Precursor_LiOH.H2O,0.0,29
+Li Precursor_missing,0.0,30
+La Precursor_La(OH)3,0.0,31
+La Precursor_La2O3,0.0,32
+La Precursor_missing,0.0,33
+Li_dop_Al/Ga,0.0,34
+Li_dop_Fe,0.0,35
+Li_dop_Ga,0.0,36
+Li_dop_Zn,0.0,37
+Li_dop_missing,0.0,38
+La_dop_0,0.0,39
+La_dop_Ba,0.0,40
+La_dop_Sr,0.0,41
+La_dop_Y,0.0,42
+La_dop_missing,0.0,43
+Zr_dop_2,0.0,44
+Zr_dop_Gd,0.0,45
+Zr_dop_Mg,0.0,46
+Zr_dop_Nb,0.0,47
+Zr_dop_Nb/Gd,0.0,48
+Zr_dop_Nb/Y,0.0,49
+Zr_dop_Sb,0.0,50
+Zr_dop_Sc,0.0,51
+Zr_dop_Sm,0.0,52
+Zr_dop_Ta,0.0,53
+Zr_dop_Ta/Nb/Y,0.0,54
+Zr_dop_Te,0.0,55
+Zr_dop_Ti,0.0,56
+Zr_dop_W,0.0,57
+Zr_dop_Y,0.0,58
+Zr_dop_missing,0.0,59

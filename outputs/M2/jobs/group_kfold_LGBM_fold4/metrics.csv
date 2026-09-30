@@ -1,0 +1,2 @@
+job_id,cohort,model,data_version,imputation,threshold_name,threshold,seed,method,fold,split,n,true_0,true_1,accuracy,f1_weighted,roc_auc,auc_reason,tn,fp,fn,tp,reload_verified,best_cv_f1,best_params,elapsed_seconds
+group_kfold_LGBM_fold4,full,LGBM,V_raw,A0,T_main,0.000269,0,group_kfold,4,test,43,23,20,0.7441860465116279,0.7441860465116279,0.7956521739130435,,16,7,4,16,True,0.8160374715680317,"{""learning_rate"": 0.1, ""min_child_samples"": 10, ""n_estimators"": 200, ""num_leaves"": 15}",1.6536642499999061

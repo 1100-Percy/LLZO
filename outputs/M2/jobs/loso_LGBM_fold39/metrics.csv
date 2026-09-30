@@ -1,0 +1,2 @@
+job_id,cohort,model,data_version,imputation,threshold_name,threshold,seed,method,fold,split,n,true_0,true_1,accuracy,f1_weighted,roc_auc,auc_reason,tn,fp,fn,tp,reload_verified,best_cv_f1,best_params,elapsed_seconds
+loso_LGBM_fold39,full,LGBM,V_raw,A0,T_main,0.000269,0,loso,39,test,3,0,3,0.6666666666666666,0.8000000000000002,,single_class_test,0,0,1,2,True,0.8227568162063399,"{""learning_rate"": 0.1, ""min_child_samples"": 5, ""n_estimators"": 500, ""num_leaves"": 15}",1.8992990829999599
