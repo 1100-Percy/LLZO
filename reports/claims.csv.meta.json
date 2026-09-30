@@ -1,0 +1,11 @@
+{
+  "seed": null,
+  "data_version": "raw_read_only",
+  "script": "scripts/run_m0.py",
+  "git_hash": "f14e0ded9ff9eb3f9a84ff5e4bad7d5e62ab46bc",
+  "git_dirty": true,
+  "protocol_version": 1,
+  "protocol_sha256": "39c4a9d52d8baf2712ac59c3639b1ce05701fbaeda02478443097cc8b68f74ed",
+  "timestamp": "2026-09-30T02:54:27.112847+00:00",
+  "sha256": "79d34452726d36e9882c794ff7d3f556b250ff2d5c8008a9001cd7760077db44"
+}

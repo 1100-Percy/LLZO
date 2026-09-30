@@ -1,1 +1,5 @@
 claim_id,statement,artifact_path,key,value
+M0-tests,环境验收 tests,outputs/M0/validation.csv,key=tests|value,16
+M0-failures,环境验收 failures,outputs/M0/validation.csv,key=failures|value,0
+M0-errors,环境验收 errors,outputs/M0/validation.csv,key=errors|value,0
+M0-skipped,环境验收 skipped,outputs/M0/validation.csv,key=skipped|value,0
